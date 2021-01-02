@@ -9,7 +9,7 @@ import Error from "./pages/Error";
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <Router>
         <ResetStyle />
         <GlobalStyle />
@@ -29,7 +29,7 @@ const Layout = () => {
           </Route>
         </Switch>
       </Router>
-    </div>
+    </>
   );
 };
 function App() {

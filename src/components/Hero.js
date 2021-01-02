@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import MainBg from "../assets/image/hero/hero_bg.jpg";
 import LogoBg from "../assets/image/hero/loxi_sign.png";
+import variables from "../components/styles/variables";
 
 const Hero = () => {
   return (
@@ -28,8 +29,8 @@ const HeroContainer = styled.div`
   height: 100vh;
   padding: 0 0rem;
   position: relative;
-  margin-top: -80px;
-  color: #fff;
+  margin-top: 0px;
+  color: ${variables.inverse};
 
   :before {
     content: "";
@@ -72,10 +73,10 @@ const HeroBg = styled.div`
 `;
 const HeroContent = styled.div`
   z-index: 3;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 0px);
   width: 100%;
   max-height: 100%;
-  padding: 0rem 10%;
+  padding: 0rem ${variables.gutter};
   /* padding: 0rem calc((100vw - 1300px) / 2); */
 `;
 
@@ -87,7 +88,7 @@ const HeroItems = styled.div`
   height: 100vh;
   /* max-height: 100%; */
   padding: 0;
-  color: #fff;
+  color: ${variables.inverse};
   font-weight: bold;
 `;
 const HeroH1 = styled.h1`
@@ -98,7 +99,7 @@ const HeroH1 = styled.h1`
   font-weight: 900;
   line-height: 2.5rem;
   letter-spacing: 0.3rem;
-  color: #ffffff;
+  color: ${variables.inverse};
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), 4px 1px 5px rgba(0, 0, 0, 0.5),
     4px 1px 5px rgba(0, 0, 0, 0.5);
 `;
