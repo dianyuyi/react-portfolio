@@ -13,4 +13,15 @@ export default {
   breakpointTablet: "1024px",
   breakpointLaptop: "1200px",
   breakpointLarge: "60em", // 960px
+
+  //home & page : title set
+  homeDeg: "-55deg",
+  lineHT: "80%",
+  lineHL: "20%",
+  lineHW: "180px",
+
+  pageDeg: "135deg",
+  linePT: "100%",
+  linePL: "50%",
+  linePW: "100px",
 };

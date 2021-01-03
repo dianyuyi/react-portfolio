@@ -4,8 +4,10 @@ import { ResetStyle, GlobalStyle } from "./components/styles/globalStyle";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Works from "./pages/Works";
 import SingleWork from "./pages/SingleWork";
 import Error from "./pages/Error";
+import Loading from "./components/Loading";
 
 const Layout = () => {
   return (
@@ -14,12 +16,16 @@ const Layout = () => {
         <ResetStyle />
         <GlobalStyle />
         <Navbar />
+
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/works">
+            <Works />
           </Route>
           <Route path="/work/:id">
             <SingleWork />
@@ -34,7 +40,7 @@ const Layout = () => {
 };
 function App() {
   return (
-    <Suspense fallback="loading">
+    <Suspense fallback={<Loading />}>
       <Layout />
     </Suspense>
   );

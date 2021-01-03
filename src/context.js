@@ -8,6 +8,7 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [workProjects, setWorkProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [lng, setLng] = useState("en");
 
   // const { t, i18n } = useTranslation();
@@ -28,7 +29,15 @@ const AppProvider = ({ children }) => {
   // newData = JSON.stringify(data);
 
   return (
-    <AppContext.Provider value={{ workProjects, lng, setLng }}>
+    <AppContext.Provider
+      value={{
+        workProjects,
+        lng,
+        setLng,
+        loading,
+        setLoading,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

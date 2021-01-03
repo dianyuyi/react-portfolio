@@ -2,21 +2,32 @@ import React from "react";
 import Hero from "../components/Hero";
 import Profile from "../components/Profile";
 import WorksList from "../components/WorksList";
-import styled from "styled-components";
-import InkBg from "../assets/image/ink_bg.png";
+import Title from "../components/Title";
+// import Loading from "../components/Loading";
+import { MainBg, FlexContainer } from "../components/styles/home";
 
 const Home = () => {
   return (
     <MainBg>
       <Hero />
-      <Profile />
-      <WorksList />
+      <FlexContainer>
+        <Title
+          heading={"about_title"}
+          grid={25}
+          home={true}
+          left={true}
+        ></Title>
+        <Profile grid={75} />
+        <WorksList grid={75} limit={4} />
+        <Title
+          heading={"work_title"}
+          grid={25}
+          home={true}
+          left={false}
+        ></Title>
+      </FlexContainer>
     </MainBg>
   );
 };
-
-const MainBg = styled.div`
-  background-image: url(${InkBg});
-`;
 
 export default Home;
