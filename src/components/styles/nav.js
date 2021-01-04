@@ -40,9 +40,9 @@ export const NavLink = styled(Link)`
   color: ${variables.primary};
   text-decoration: none;
   padding: 0 0.5rem;
-  font-family: serif;
+  font-family: "creamfont-1.1 regular";
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 300;
   cursor: pointer;
 `;
 
@@ -56,7 +56,7 @@ export const LngBtn = styled.button`
   color: ${variables.primary};
   padding: 0 0.5rem;
   transition: 0.5s;
-  font-weight: 900;
+  font-weight: 300;
   font-size: 1.15rem;
   padding-bottom: 2px;
   &.active {

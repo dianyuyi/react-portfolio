@@ -11,13 +11,13 @@ import {
   HeroH1,
 } from "../components/styles/heroStyle";
 
-import LogoBg from "../assets/image/hero/loxi_sign.png";
+import LogoBg from "../assets/image/hero/loxi_sign-min.png";
 
 // import Loading from "../components/Loading";
 // import { useGlobalContext } from "../context";
 
 const Hero = () => {
-  // const { loading } = useGlobalContext();
+  // const { webLoading } = useGlobalContext();
   config({ ssrFadeout: true });
   const { t } = useTranslation();
   return (

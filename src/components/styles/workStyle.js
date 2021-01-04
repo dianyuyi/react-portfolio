@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import variables from "./variables";
+import { Link } from "react-router-dom";
 
 export const WorksContainer = styled.div`
   width: ${({ grid }) => (grid ? `${grid}%` : `100%`)};
   height: 100%;
   display: inline-flex;
   flex-direction: column;
+  mask-type: 2rem;
   padding: ${({ grid }) =>
     grid ? `0 0 0 ${variables.gutter}` : `0 ${variables.gutter}`};
   @media only screen and (max-width: ${variables.breakpointTablet}) {
@@ -19,7 +21,6 @@ export const WorkWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
-  margin-top: 5rem;
   padding: 2rem 0;
   justify-content: center;
   align-items: center;
@@ -58,6 +59,7 @@ export const WorkImg = styled.div`
   width: 100%;
   height: 200px;
   overflow: hidden;
+  background: #fff;
   /* border: 1px solid #eee;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05); */
   img {
@@ -83,7 +85,7 @@ export const WorkInfo = styled.div`
 `;
 
 export const WorkTitle = styled.div`
-  font-family: Serif;
+  font-family: "creamfont-1.1 regular";
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -91,11 +93,11 @@ export const WorkTitle = styled.div`
   margin-top: 0.5rem;
 `;
 export const TextWrap = styled.div`
-  font-family: Serif;
+  font-family: "creamfont-1.1 regular";
   font-size: 1.05rem;
 `;
 
-export const MoreBtn = styled.button`
+export const MoreBtn = styled(Link)`
   position: absolute;
   right: 1rem;
   font-size: 1.05rem;

@@ -7,13 +7,13 @@ import {
   TitleBg,
 } from "../components/styles/title";
 
-const Title = ({ heading, grid, home, left }) => {
+const Title = ({ heading, grid, home, dir }) => {
   const { t } = useTranslation();
 
   return (
-    <MainTitleContainer grid={grid} left={left}>
+    <MainTitleContainer home={home} grid={grid} dir={dir}>
       <Fade top>
-        <MainTitle home={home}>{t(heading)}</MainTitle>
+        <MainTitle>{t(heading)}</MainTitle>
       </Fade>
       <TitleBg />
     </MainTitleContainer>

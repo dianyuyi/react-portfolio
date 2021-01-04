@@ -1,12 +1,13 @@
 const data = [
   {
+    id: 22,
     name_tw: "綻光",
     name_en: "Shine from dark",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609421942/assets/artworks/%E7%B6%BB%E5%85%89_resize_gedjin.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609421942/assets/artworks/%E7%B6%BB%E5%85%89_resize_gedjin.jpg",
-    tag: ["Waterink", "Digital", "Graphic"],
+    tag: ["Digital", "Graphic"],
     date: "2020",
     description_tw:
       "靈感發想來自於從寒冷高空中綻放的煙火。本身帶有對生於黑暗，卻不屈服於絕望之人的祝福。希望抱持正面態度，為充滿希望的未來而努力。",
@@ -15,13 +16,45 @@ const data = [
     url: "",
   },
   {
+    id: 21,
+    name_tw: "太古引",
+    name_en: "Song of Ancient",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1609769440/assets/webworks/Song_of_Ancient_iqnyyh.png",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/v1609769440/assets/webworks/Song_of_Ancient_iqnyyh.png",
+    tag: ["P5", "Digital"],
+    date: "2020",
+    description_tw:
+      "主要由noise函數、由圓構成的樹幹和特殊濾鏡效果，營造出靜謐悠久的氛圍。題目和靈感來自中國古琴專輯「太古引」，是過去書法課上常放的背景音樂之一。另外，那棵樹是教室巷口已被砍掉的樹，故而於此聊表紀念。",
+    description_en: `It is mainly composed of noise functions, tree trunks made of circles and special filter effects, creating a quiet and long atmosphere. The title and inspiration came from the Chinese Guqin album "Tai Ku Yin", which was one of the background music often used in calligraphy classes in the past. In addition, that tree is a tree that has been cut down in the alley of the classroom, so I will commemorate it here.`,
+    url: "https://www.openprocessing.org/sketch/971768",
+  },
+  {
+    id: 20,
+    name_tw: "浪濤",
+    name_en: "Seawaves",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1609769416/assets/webworks/seawaves_ytokkv.png",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/v1609769416/assets/webworks/seawaves_ytokkv.png",
+    tag: ["P5", "Digital"],
+    date: "2020",
+    description_tw:
+      "參考其他人使用processing.js寫出的動態線條，用P5.js重新改寫後加入白色像素，繪製成仿海洋浪濤的動態作品。最初所有像素會在畫面範圍中一起產生，所以海浪的色調層次效果會隨時間改變。",
+    description_en:
+      "Refer to the dynamic lines written by other people using processing.js, rewrite it with P5.js and add white pixels to draw dynamic works that imitate ocean waves. Initially, all pixels will be produced together in the frame range, so the tonal gradation effect of the waves will change over time.",
+    url: "https://www.openprocessing.org/sketch/958584",
+  },
+  {
+    id: 19,
     name_tw: "曙日初陽",
     name_en: "Dawn",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609047654/assets/artworks/waterInk_abstract_01_y_vvxuev.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,e_sharpen:100,g_auto,h_1000,w_1000/v1609047654/assets/artworks/waterInk_abstract_01_y_vvxuev.jpg",
-    tag: ["Waterink", "Digital", "Graphic"],
+    tag: ["Digital", "Graphic"],
     date: "2020",
     description_tw:
       "以日出般耀眼金黃的色彩為主體，表現對新年未來展望的抽象水墨。因為是新的開始，所以畫作本身也有希望傳達正能量的意圖。",
@@ -30,13 +63,30 @@ const data = [
     url: "",
   },
   {
+    id: 18,
+    name_tw: "墨暈山水",
+    name_en: "Ink Mountains",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1609753552/assets/webworks/landscape0_faldza.jpg",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/v1609753552/assets/webworks/landscape0_faldza.jpg",
+    tag: ["P5", "Digital"],
+    date: "2020",
+    description_tw:
+      "參考傳統中國水墨畫中時常出現的山水畫題材，用P5.js嘗試重現的靜態畫。主要分成兩層，分別是上層的雲和霧、透明度遮罩，以及下層由不規則線條形成的連綿山峰。",
+    description_en:
+      "Refer to the theme of landscape painting that often appears in traditional Chinese ink painting, and try to reproduce the static painting with P5.js. It is mainly divided into two layers: the upper layer of clouds and fog, the transparency mask, and the lower layer of continuous mountain peaks formed by irregular lines.",
+    url: "https://www.openprocessing.org/sketch/941956",
+  },
+  {
+    id: 17,
     name_tw: "春梅初綻",
     name_en: "Spring plum blossoms",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609047687/assets/artworks/waterInk_abstract_01_r_fpbpk1.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609047687/assets/artworks/waterInk_abstract_01_r_fpbpk1.jpg",
-    tag: ["Waterink", "Digital", "Graphic"],
+    tag: ["Digital", "Graphic"],
     date: "2020",
     description_tw:
       "以新年梅花的開綻印象為主題的抽象水墨。包含了新年喜慶的氣氛，也可以說同時象徵燃放爆竹、花朵綻放這類新年新氣象的氣氛。",
@@ -45,13 +95,30 @@ const data = [
     url: "",
   },
   {
+    id: 16,
+    name_tw: "飄移墨跡",
+    name_en: "Calligraphy Ink",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1609753772/assets/webworks/inkDraw_nerkwd.png",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/v1609753772/assets/webworks/inkDraw_nerkwd.png",
+    tag: ["P5", "Digital"],
+    date: "2020",
+    description_tw:
+      "運用P5.js的particle系統，仿造無數微小粒子匯聚成墨跡隨滑鼠移動的軌跡。另外也參照書法用具中水寫布的概念，做了另一種滑鼠點擊後會暈染，並在之後緩慢消失的筆跡。",
+    description_en:
+      "Using the particle system of P5.js, imitate countless tiny particles converge into the track of the ink moving with the mouse. In addition, referring to the concept of writing cloth in water in calligraphy utensils, I made another handwriting that would smudge after clicking with the mouse and then slowly disappear afterwards.",
+    url: "https://www.openprocessing.org/sketch/936319",
+  },
+  {
+    id: 15,
     name_tw: "山水雲霧",
     name_en: "Landscape and clouds",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609047672/assets/artworks/waterInk_abstract_02_b_byzpqc.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609047672/assets/artworks/waterInk_abstract_02_b_byzpqc.jpg",
-    tag: ["Waterink", "Digital", "Graphic"],
+    tag: ["Digital", "Graphic"],
     date: "2020",
     description_tw:
       "用較傳統的色調與筆觸，去貼近書法表現的抽象數位水墨。主旨是山水風景間雲霧流轉的形象。算是在嘗試數位與傳統間的創作距離的作品。",
@@ -60,13 +127,14 @@ const data = [
     url: "",
   },
   {
+    id: 14,
     name_tw: "春日茶宴",
     name_en: "Spring tea feast",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609047658/assets/artworks/waterInk_abstract_02_g_migadj.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609047658/assets/artworks/waterInk_abstract_02_g_migadj.jpg",
-    tag: ["Waterink", "Digital", "Graphic"],
+    tag: ["Digital", "Graphic"],
     date: "2020",
     description_tw:
       "以春日賞花的茶宴為主題的數位水墨。因為是茶宴所以主色調採用綠色，配合典雅的紫色，主旨在營造出優雅、令人心平氣和的氛圍。",
@@ -75,6 +143,7 @@ const data = [
     url: "",
   },
   {
+    id: 13,
     name_tw: "LAVIDA",
     name_en: "LAVIDA",
     image:
@@ -82,7 +151,7 @@ const data = [
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609416100/assets/webworks/thumb/logo-lavida-standard_gug3hz.svg",
     alt: "LAVIDA",
-    tag: ["Website", "UI", "html/css", "API"],
+    tag: ["Website", "UI", "html/css"],
     date: "2019~2020",
     description_tw:
       "主要販賣母嬰商品的電商網站。前後台網站都是自製版型，因此必須根據現有的網站架構，與後端工程師進行溝通、架構維護，並製作供客服部門使用的操作文件。在我任職期間曾進行兩項大型功能改版，為電子發票、行動支付的串接流程，前者在2019年10月上線，後者則在2020年7月上線。",
@@ -91,6 +160,7 @@ const data = [
     url: "https://www.lavida.com.tw",
   },
   {
+    id: 12,
     name_tw: "話鬼",
     name_en: "Ghost Story",
     image:
@@ -106,6 +176,7 @@ const data = [
     url: "",
   },
   {
+    id: 11,
     name_tw: "Ems",
     name_en: "EMS",
     image:
@@ -121,13 +192,14 @@ const data = [
     url: "",
   },
   {
+    id: 10,
     name_tw: "Arofly",
     name_en: "Arofly",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609413952/assets/webworks/app-arofly_gs40vn.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609414687/assets/webworks/thumb/arofly_logo_qv9aim.png",
-    tag: ["App", "UI", "Angular", "Bluetooth"],
+    tag: ["App", "UI"],
     date: "2019",
     description_tw:
       "給自行車紀錄里程數據，並上傳到官網雲端資料庫的APP。加入專案時，該APP需要增加新藍牙裝置使用的頁面，因此我負責製作：腳踏車裝置選擇、心率介面、資料上傳清單等新UI。儘管後來突然追加不在工作日程表上的離線資料庫需求，讓所有人和發案方都有些不愉快，功能最後還是有完成。",
@@ -136,13 +208,14 @@ const data = [
     url: "",
   },
   {
+    id: 9,
     name_tw: "OMA",
     name_en: "OMA",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609413968/assets/webworks/app-oma_jucwiu.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609414768/assets/webworks/thumb/logo_wkuuen.svg",
-    tag: ["App", "UI", "Angular", "Bluetooth"],
+    tag: ["App", "UI"],
     date: "2019",
     description_tw:
       "配合外部連接的跑步機藍芽，記錄資料並上傳雲端資料庫的運動型APP。接手專案時，我主要負責測試新儀器面板及藍牙的資料傳輸穩定性，以及調整部份舊UI。",
@@ -151,13 +224,14 @@ const data = [
     url: "",
   },
   {
+    id: 8,
     name_tw: "IUN3:借貸後台app",
     name_en: "IUN3: Loan app",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609413958/assets/webworks/app-iun3_grhswa.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609416676/assets/webworks/thumb/%E6%88%AA%E5%9C%96_2020-12-31_%E4%B8%8B%E5%8D%888.10.39_dqnyrk.png",
-    tag: ["App", "UI", "Nuxt"],
+    tag: ["App", "UI", "vue/Nuxt"],
     date: "2019",
     description_tw:
       "主體是提供給借貸平台客服的通話APP。原本PM有提出用nuxt重構的需求，但在完成客戶資料API試串接後因種種原因，該提案被廢棄。剩下的部分source code可以在github上查看。",
@@ -166,13 +240,14 @@ const data = [
     url: "https://github.com/dianyuyi/oldProject_iun3",
   },
   {
+    id: 7,
     name_tw: "Lin Calligraphy",
     name_en: "Lin Calligraphy",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609414210/assets/webworks/w-lin_hxkdqc.png",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609414899/assets/webworks/thumb/FB_link_ozbcy2.jpg",
-    tag: ["Website", "UI", "Vue", "Nuxt"],
+    tag: ["Website", "UI", "Vvue/Nuxt"],
     date: "2019",
     description_tw:
       "作為設計兼程式練習，替自己的書法老師製作的畫廊型作品集網站。包含首頁slide、RWD Nav和藝作展示效果。為了確認SEO效果，使用vue生態系的nuxt來生成靜態SPA頁面。",
@@ -181,6 +256,7 @@ const data = [
     url: "https://dianyuyi.github.io/lin_calligraphy/Home/",
   },
   {
+    id: 6,
     name_tw: "詭影",
     name_en: "Shadow",
     image:
@@ -196,6 +272,7 @@ const data = [
     url: "",
   },
   {
+    id: 5,
     name_tw: "非洲豬瘟資訊專區",
     name_en: "African swine fever information",
     image:
@@ -211,6 +288,7 @@ const data = [
     url: "https://asf.baphiq.gov.tw/",
   },
   {
+    id: 4,
     name_tw: "COA英文官網",
     name_en: "COA-Eng",
     image:
@@ -226,6 +304,7 @@ const data = [
     url: "https://eng.coa.gov.tw/index.php",
   },
   {
+    id: 3,
     name_tw: "青年農民輔導平台",
     name_en: "YF Academy",
     image:
@@ -241,6 +320,7 @@ const data = [
     url: "https://academy.coa.gov.tw/YF/",
   },
   {
+    id: 2,
     name_tw: "3章1Q解疑專區",
     name_en: "3B1Q: Q&A List",
     image:
@@ -256,6 +336,7 @@ const data = [
     url: "https://4b1q.coa.gov.tw/qa_list.php",
   },
   {
+    id: 1,
     name_tw: "舊平面作品集",
     name_en: "Old graphic portfolio",
     image:

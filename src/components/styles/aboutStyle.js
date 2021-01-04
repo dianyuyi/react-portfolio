@@ -24,8 +24,11 @@ export const CircleClip = styled.div`
   overflow: hidden;
   position: absolute;
   top: 0;
-  right: 10%;
+  /* right: 10%; */
   transition: 0.3s;
+  z-index: 1;
+  position: ${({ grid }) => (grid ? `absolute` : `initial`)};
+  right: ${({ grid }) => (grid ? `10%` : `initial`)};
   img {
     max-width: 100%;
     border: 1px solid ${variables.primary};
@@ -34,7 +37,6 @@ export const CircleClip = styled.div`
   @media only screen and (max-width: ${variables.breakpointTablet}) {
     position: initial;
     right: initial;
-    z-index: 1;
   }
 `;
 
@@ -44,6 +46,8 @@ export const IntroContext = styled.div`
   margin: 160px 10% 0 auto;
   padding: 1.5rem 1.5rem;
   background: #4d4d4d;
+  margin-top: ${({ grid }) => (grid ? `160px` : `0`)};
+
   @media only screen and (max-width: ${variables.breakpointTablet}) {
     margin-top: -0.5rem;
   }
@@ -60,9 +64,9 @@ export const IntroInner = styled.div`
   border: 1px solid #4d4d4d;
   transition: 0.3s;
   p {
-    font-family: serif;
+    font-family: "creamfont-1.1 regular";
     font-size: 1.15rem;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.75rem;
     padding-top: 1rem;
     text-align: justify;

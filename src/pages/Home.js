@@ -15,15 +15,15 @@ const Home = () => {
           heading={"about_title"}
           grid={25}
           home={true}
-          left={true}
+          dir={"left"}
         ></Title>
         <Profile grid={75} />
-        <WorksList grid={75} limit={4} />
+        <WorksList grid={75} limit={6} />
         <Title
           heading={"work_title"}
           grid={25}
           home={true}
-          left={false}
+          dir={"right"}
         ></Title>
       </FlexContainer>
     </MainBg>

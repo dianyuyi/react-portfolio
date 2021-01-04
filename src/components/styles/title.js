@@ -8,21 +8,28 @@ export const MainTitleContainer = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  padding: ${({ left }) =>
-    left ? `0 0 0 ${variables.gutter}` : `0 ${variables.gutter} 0 0`};
+  /* padding: 0 ${variables.gutter}; */
+  padding: ${({ home, dir }) =>
+    home && dir === "left"
+      ? `0 0 0 ${variables.gutter}`
+      : `0 ${variables.gutter} 0 0`};
+  @media only screen and (max-width: ${variables.breakpointLarge}) {
+    /* padding: ${({ grid }) =>
+      grid ? `0 0 0 ${variables.gutter}` : `0 ${variables.gutter}`}; */
+  }
 
   @media only screen and (max-width: ${variables.breakpointTablet}) {
     width: 100%;
     padding: 0 ${variables.gutter};
-    order: ${({ left }) => (left ? `1` : `3`)};
+    order: ${({ dir }) => (dir === "left" ? `1` : `3`)};
   }
 `;
 
 export const MainTitle = styled.h1`
   position: relative;
-  font-family: Serif;
+  font-family: "creamfont-1.1 regular";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: clamp(2.5rem, 6vw, 4rem);
   line-height: 4rem;
   padding: 2rem 0;

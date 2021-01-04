@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import variables from "./variables";
-import MainBg from "../../assets/image/hero/hero_bg.jpg";
+import MainBg from "../../assets/image/hero/hero_bg-min.jpg";
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -72,7 +72,7 @@ export const HeroItems = styled.div`
   font-weight: bold;
 `;
 export const HeroH1 = styled.h1`
-  font-family: serif;
+  font-family: "creamfont-1.1 regular";
   font-size: clamp(3.5rem, 7.5vw, 6rem);
   padding: 1rem 0;
   margin-bottom: 0.5rem;

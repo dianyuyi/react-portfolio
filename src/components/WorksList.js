@@ -15,19 +15,20 @@ import {
   MoreBtn,
 } from "../components/styles/workStyle";
 
-const Works = ({ limit, grid, home }) => {
+const WorksList = ({ limit, grid, home }) => {
   config({ ssrFadeout: true });
   const { workProjects, lng } = useGlobalContext();
-  const newWorkProject = limit ? workProjects.slice(0, limit) : workProjects;
+
+  const newWorkProjects = limit ? workProjects.slice(0, limit) : workProjects;
 
   return (
     <WorksContainer grid={grid} home={home}>
       <WorkWrapper>
-        {newWorkProject.map((work, index) => {
+        {newWorkProjects.map((work, index) => {
           const {
+            id,
             name_tw,
             name_en,
-            image,
             thumb,
             description_en,
             description_tw,
@@ -35,9 +36,7 @@ const Works = ({ limit, grid, home }) => {
           return (
             <WorkCard key={index}>
               <WorkImg>
-                <LazyLoad width={100}>
-                  <img alt={name_en} src={thumb} />
-                </LazyLoad>
+                <img alt={name_en} src={thumb} />
               </WorkImg>
               <WorkInfo>
                 <Fade cascade ssrFadeout>
@@ -51,7 +50,7 @@ const Works = ({ limit, grid, home }) => {
                       basedOn="letters"
                     />
                   </TextWrap>
-                  <MoreBtn>{`> More`}</MoreBtn>
+                  <MoreBtn to={`/work/${id}`}>{`> More`}</MoreBtn>
                 </Fade>
               </WorkInfo>
             </WorkCard>
@@ -62,4 +61,4 @@ const Works = ({ limit, grid, home }) => {
   );
 };
 
-export default Works;
+export default WorksList;
