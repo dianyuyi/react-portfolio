@@ -29,7 +29,7 @@ export const WorkWrapper = styled.div`
 export const WorkCard = styled.figure`
   width: 44%;
   height: 320px;
-  margin: 2rem 6% 2rem 0;
+  margin: 2rem 3%;
   overflow: hidden;
   display: flex;
   flex-direction: column;

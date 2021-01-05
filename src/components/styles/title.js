@@ -9,13 +9,13 @@ export const MainTitleContainer = styled.div`
   justify-content: center;
   align-items: center;
   /* padding: 0 ${variables.gutter}; */
-  padding: ${({ home, dir }) =>
-    home && dir === "left"
-      ? `0 0 0 ${variables.gutter}`
-      : `0 ${variables.gutter} 0 0`};
+  padding-left: ${({ dir }) => (dir === "left" ? `${variables.gutter}` : `0`)};
+  padding-right: ${({ dir }) =>
+    dir === "right" ? `${variables.gutter}` : `0`};
+
   @media only screen and (max-width: ${variables.breakpointLarge}) {
-    /* padding: ${({ grid }) =>
-      grid ? `0 0 0 ${variables.gutter}` : `0 ${variables.gutter}`}; */
+    padding: ${({ grid }) =>
+      grid ? `0 0 0 ${variables.gutter}` : `0 ${variables.gutter}`};
   }
 
   @media only screen and (max-width: ${variables.breakpointTablet}) {

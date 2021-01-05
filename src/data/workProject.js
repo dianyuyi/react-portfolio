@@ -23,7 +23,7 @@ const data = [
       "https://res.cloudinary.com/loxi/image/upload/v1609769440/assets/webworks/Song_of_Ancient_iqnyyh.png",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609769440/assets/webworks/Song_of_Ancient_iqnyyh.png",
-    tag: ["P5", "Digital"],
+    tag: ["P5.js", "Digital"],
     date: "2020",
     description_tw:
       "主要由noise函數、由圓構成的樹幹和特殊濾鏡效果，營造出靜謐悠久的氛圍。題目和靈感來自中國古琴專輯「太古引」，是過去書法課上常放的背景音樂之一。另外，那棵樹是教室巷口已被砍掉的樹，故而於此聊表紀念。",
@@ -38,7 +38,7 @@ const data = [
       "https://res.cloudinary.com/loxi/image/upload/v1609769416/assets/webworks/seawaves_ytokkv.png",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609769416/assets/webworks/seawaves_ytokkv.png",
-    tag: ["P5", "Digital"],
+    tag: ["P5.js", "Digital"],
     date: "2020",
     description_tw:
       "參考其他人使用processing.js寫出的動態線條，用P5.js重新改寫後加入白色像素，繪製成仿海洋浪濤的動態作品。最初所有像素會在畫面範圍中一起產生，所以海浪的色調層次效果會隨時間改變。",
@@ -70,7 +70,7 @@ const data = [
       "https://res.cloudinary.com/loxi/image/upload/v1609753552/assets/webworks/landscape0_faldza.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609753552/assets/webworks/landscape0_faldza.jpg",
-    tag: ["P5", "Digital"],
+    tag: ["P5.js", "Digital"],
     date: "2020",
     description_tw:
       "參考傳統中國水墨畫中時常出現的山水畫題材，用P5.js嘗試重現的靜態畫。主要分成兩層，分別是上層的雲和霧、透明度遮罩，以及下層由不規則線條形成的連綿山峰。",
@@ -102,7 +102,7 @@ const data = [
       "https://res.cloudinary.com/loxi/image/upload/v1609753772/assets/webworks/inkDraw_nerkwd.png",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609753772/assets/webworks/inkDraw_nerkwd.png",
-    tag: ["P5", "Digital"],
+    tag: ["P5.js", "Digital"],
     date: "2020",
     description_tw:
       "運用P5.js的particle系統，仿造無數微小粒子匯聚成墨跡隨滑鼠移動的軌跡。另外也參照書法用具中水寫布的概念，做了另一種滑鼠點擊後會暈染，並在之後緩慢消失的筆跡。",
@@ -231,7 +231,7 @@ const data = [
       "https://res.cloudinary.com/loxi/image/upload/v1609413958/assets/webworks/app-iun3_grhswa.jpg",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609416676/assets/webworks/thumb/%E6%88%AA%E5%9C%96_2020-12-31_%E4%B8%8B%E5%8D%888.10.39_dqnyrk.png",
-    tag: ["App", "UI", "vue/Nuxt"],
+    tag: ["App", "UI", "Vue/Nuxt"],
     date: "2019",
     description_tw:
       "主體是提供給借貸平台客服的通話APP。原本PM有提出用nuxt重構的需求，但在完成客戶資料API試串接後因種種原因，該提案被廢棄。剩下的部分source code可以在github上查看。",
@@ -247,7 +247,7 @@ const data = [
       "https://res.cloudinary.com/loxi/image/upload/v1609414210/assets/webworks/w-lin_hxkdqc.png",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609414899/assets/webworks/thumb/FB_link_ozbcy2.jpg",
-    tag: ["Website", "UI", "Vvue/Nuxt"],
+    tag: ["Website", "UI", "Vue/Nuxt"],
     date: "2019",
     description_tw:
       "作為設計兼程式練習，替自己的書法老師製作的畫廊型作品集網站。包含首頁slide、RWD Nav和藝作展示效果。為了確認SEO效果，使用vue生態系的nuxt來生成靜態SPA頁面。",

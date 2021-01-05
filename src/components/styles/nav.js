@@ -13,6 +13,9 @@ export const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   top: 0;
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    display: none;
+  }
 `;
 export const LogoImg = styled.img`
   width: 60px;

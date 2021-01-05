@@ -15,6 +15,9 @@ export default {
   breakpointLarge: "60em", // 960px
 
   //home & page : title set
+  dirLeft: "0 0 0 5%",
+  dirRight: "0 5% 0 0",
+
   homeDeg: "-55deg",
   lineHT: "80%",
   lineHL: "20%",

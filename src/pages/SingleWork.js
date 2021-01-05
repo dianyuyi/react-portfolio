@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 // import Loading from "../components/Loading";
 import { useParams, Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
@@ -8,13 +9,13 @@ const SingleWork = () => {
   const [displayWork, setDisplayWork] = useState([]);
   const { id } = useParams();
   useEffect(() => {
-    const workById = workProjects.filter((item) => item.id == id);
+    const workById = workProjects.filter((item) => item.id === id);
     setDisplayWork(workById);
   }, [id]);
 
   console.log(displayWork);
   return (
-    <div>
+    <motion.div exit={{ opacity: 0 }}>
       {/* <p>test</p>
       <p>{id}</p> */}
       {displayWork.map((item, index) => {
@@ -42,7 +43,7 @@ const SingleWork = () => {
           </div>
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 

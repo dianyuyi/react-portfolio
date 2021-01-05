@@ -1,7 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Error = () => {
-  return <div>error part</div>;
+  return <motion.div exit={{ opacity: 0 }}>error part</motion.div>;
 };
 
 export default Error;

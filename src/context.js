@@ -2,7 +2,6 @@ import React, { useState, useContext, useEffect } from "react";
 // import useGoogleSheets from "use-google-sheets";
 import localData from "./data/workProject";
 // import testdata from "./data/testdata";
-// import { useTranslation } from "react-i18next";
 
 const AppContext = React.createContext();
 
@@ -32,14 +31,15 @@ const AppProvider = ({ children }) => {
 
   const [workProjects, setWorkProjects] = useState(localData);
   const [webLoading, setWebLoading] = useState(true);
+  const [isSideOpen, setIsSideOpen] = useState(false);
   const [lng, setLng] = useState("en");
-  const [allTags, setAllTags] = useState(["all", ...allTag]);
-  const [activeTag, setActiveTag] = useState("all");
-  console.log(workProjects);
-  console.log(allTags);
+  const [allTags, setAllTags] = useState(["All", ...allTag]);
+  const [activeTag, setActiveTag] = useState("All");
+  // console.log(workProjects);
+  // console.log(allTags);
 
   const filterByTag = (tag) => {
-    if (tag === "all") {
+    if (tag === "All") {
       setWorkProjects(localData);
       return;
     }
@@ -62,6 +62,8 @@ const AppProvider = ({ children }) => {
         setLng,
         webLoading,
         setWebLoading,
+        isSideOpen,
+        setIsSideOpen,
         allTags,
         filterByTag,
         activeTag,

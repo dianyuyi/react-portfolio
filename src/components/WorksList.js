@@ -1,8 +1,5 @@
 import React from "react";
 import * as LinesEllipsis from "react-lines-ellipsis";
-import Fade from "react-reveal/Fade";
-import config from "react-reveal/globals";
-import LazyLoad from "react-lazyload";
 import { useGlobalContext } from "../context";
 import {
   WorksContainer,
@@ -16,9 +13,7 @@ import {
 } from "../components/styles/workStyle";
 
 const WorksList = ({ limit, grid, home }) => {
-  config({ ssrFadeout: true });
   const { workProjects, lng } = useGlobalContext();
-
   const newWorkProjects = limit ? workProjects.slice(0, limit) : workProjects;
 
   return (
@@ -39,19 +34,17 @@ const WorksList = ({ limit, grid, home }) => {
                 <img alt={name_en} src={thumb} />
               </WorkImg>
               <WorkInfo>
-                <Fade cascade ssrFadeout>
-                  <WorkTitle>{lng === "en" ? name_en : name_tw}</WorkTitle>
-                  <TextWrap>
-                    <LinesEllipsis
-                      text={lng === "en" ? description_en : description_tw}
-                      maxLine="1"
-                      ellipsis="..."
-                      trimRight
-                      basedOn="letters"
-                    />
-                  </TextWrap>
-                  <MoreBtn to={`/work/${id}`}>{`> More`}</MoreBtn>
-                </Fade>
+                <WorkTitle>{lng === "en" ? name_en : name_tw}</WorkTitle>
+                <TextWrap>
+                  <LinesEllipsis
+                    text={lng === "en" ? description_en : description_tw}
+                    maxLine="1"
+                    ellipsis="..."
+                    trimRight
+                    basedOn="letters"
+                  />
+                </TextWrap>
+                <MoreBtn to={`/work/${id}`}>{`> More`}</MoreBtn>
               </WorkInfo>
             </WorkCard>
           );
