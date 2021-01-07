@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
   display: inline-flex;
   flex-direction: column;
   padding: ${({ grid }) => (grid ? `0 5% 0 0` : `0 5%`)};
-  margin: 3rem 0;
+  margin: 3rem 0 2rem 0;
   @media only screen and (max-width: ${variables.breakpointTablet}) {
     width: 100%;
     padding: 0 5%;

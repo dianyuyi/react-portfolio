@@ -9,7 +9,7 @@ const SingleWork = () => {
   const [displayWork, setDisplayWork] = useState([]);
   const { id } = useParams();
   useEffect(() => {
-    const workById = workProjects.filter((item) => item.id === id);
+    const workById = workProjects.filter((item) => item.id == id);
     setDisplayWork(workById);
   }, [id]);
 

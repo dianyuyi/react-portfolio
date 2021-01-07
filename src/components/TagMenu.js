@@ -1,6 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../context";
-import { TagBtn } from "../components/styles/tag";
+import { TagList, TagBtn } from "../components/styles/tag";
 
 const TagMenu = () => {
   const { allTags, setActiveTag, activeTag, filterByTag } = useGlobalContext();
@@ -12,7 +12,7 @@ const TagMenu = () => {
   // };
 
   return (
-    <div>
+    <TagList>
       {allTags.map((tag, index) => {
         return (
           <TagBtn
@@ -24,7 +24,7 @@ const TagMenu = () => {
           </TagBtn>
         );
       })}
-    </div>
+    </TagList>
   );
 };
 

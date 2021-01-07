@@ -21,7 +21,7 @@ export const WorkWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   justify-content: center;
   align-items: center;
 `;

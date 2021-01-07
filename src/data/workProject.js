@@ -13,7 +13,8 @@ const data = [
       "靈感發想來自於從寒冷高空中綻放的煙火。本身帶有對生於黑暗，卻不屈服於絕望之人的祝福。希望抱持正面態度，為充滿希望的未來而努力。",
     description_en:
       "The inspiration comes from the fireworks that bloom from the cold high sky. It has a blessing for those who were born in darkness, but did not succumb to despair. Hope to take a positive attitude and work hard for a promising future.",
-    url: "",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1609421942/assets/artworks/%E7%B6%BB%E5%85%89_resize_gedjin.jpg",
   },
   {
     id: 21,
@@ -60,7 +61,8 @@ const data = [
       "以日出般耀眼金黃的色彩為主體，表現對新年未來展望的抽象水墨。因為是新的開始，所以畫作本身也有希望傳達正能量的意圖。",
     description_en:
       "With the dazzling golden color of the sunrise as the main body, it expresses the abstract ink painting of the outlook for the future of the new year. Because it is a new beginning, the painting itself has the hope of conveying positive energy.",
-    url: "",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1609047654/assets/artworks/waterInk_abstract_01_y_vvxuev.jpg",
   },
   {
     id: 18,
@@ -92,7 +94,8 @@ const data = [
       "以新年梅花的開綻印象為主題的抽象水墨。包含了新年喜慶的氣氛，也可以說同時象徵燃放爆竹、花朵綻放這類新年新氣象的氣氛。",
     description_en:
       "An abstract ink painting with the theme of the blossoming impression of a plum blossom in the New Year. Contains the festive atmosphere of the New Year, and it can also be said to symbolize the atmosphere of the new year's atmosphere such as firecrackers and flowers blooming.",
-    url: "",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1609047687/assets/artworks/waterInk_abstract_01_r_fpbpk1.jpg",
   },
   {
     id: 16,
@@ -124,7 +127,8 @@ const data = [
       "用較傳統的色調與筆觸，去貼近書法表現的抽象數位水墨。主旨是山水風景間雲霧流轉的形象。算是在嘗試數位與傳統間的創作距離的作品。",
     description_en:
       "Use more traditional tones and brushstrokes to get close to the abstract digital ink of calligraphy. The main theme is the image of the clouds and mist flowing between the mountains and rivers. It is a work that tests the creative distance between digital and traditional.",
-    url: "",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1609047672/assets/artworks/waterInk_abstract_02_b_byzpqc.jpg",
   },
   {
     id: 14,
@@ -140,7 +144,8 @@ const data = [
       "以春日賞花的茶宴為主題的數位水墨。因為是茶宴所以主色調採用綠色，配合典雅的紫色，主旨在營造出優雅、令人心平氣和的氛圍。",
     description_en:
       "A digital ink wash with the theme of a tea feast in spring. Because it is a tea feast, the main color is green, with the elegant purple, the main purpose is to create an elegant and peaceful atmosphere.",
-    url: "",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1609047658/assets/artworks/waterInk_abstract_02_g_migadj.jpg",
   },
   {
     id: 13,
@@ -173,7 +178,7 @@ const data = [
       "繼上次的「詭影」書籍封面後，另一本同系列的書籍封面設計。雖然同樣要求書法元素，但這次主要用在背景上來營造詭譎氣氛；另外因為有在書店使用宣傳圖的需求，比上一本多了不少色調變化。",
     description_en:
       "Following the cover of the last 'Shadow' book, another book cover design of the same series. Although calligraphy elements are also required, this time they are mainly used in the background to create a quirky atmosphere; in addition, because of the need to use promotional images in the bookstore, there are a lot more tonal changes than the previous one.",
-    url: "",
+    url: "https://www.books.com.tw/products/0010827792",
   },
   {
     id: 11,
@@ -269,7 +274,7 @@ const data = [
       "偶然間接下的書籍封面設計案。經紀公司要求封面字體必須有書法設計感，最後在朦朧美和白黑分明間選了後者，變成線條明顯的大字。據說作者本人很喜歡⋯⋯但我不太理解為啥就是了。",
     description_en:
       "An accidental book cover design case. The agency requires that the cover font must have a sense of calligraphy design, and finally chose the latter between the hazy beauty and the clear white and black, and it turned into large characters with obvious lines. It is said that the author himself likes it very much... but I don't quite understand why.",
-    url: "",
+    url: "https://www.books.com.tw/products/0010793787?loc=P_0005_002",
   },
   {
     id: 5,
