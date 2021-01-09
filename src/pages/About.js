@@ -9,7 +9,7 @@ const About = () => {
     <motion.div exit={{ opacity: 0 }}>
       <Title heading={"about_title"} home={false} />
       <Profile />
-      <SocialMedia />
+      <SocialMedia iconColor={"black"} />
     </motion.div>
   );
 };

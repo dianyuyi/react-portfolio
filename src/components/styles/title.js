@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import variables from "./variables";
+import variables from "./common/variables";
 import ButtonBg from "../../assets/image/btn_bg.png";
 
 export const MainTitleContainer = styled.div`
@@ -14,8 +14,8 @@ export const MainTitleContainer = styled.div`
     dir === "right" ? `${variables.gutter}` : `0`};
 
   @media only screen and (max-width: ${variables.breakpointLarge}) {
-    padding: ${({ grid }) =>
-      grid ? `0 0 0 ${variables.gutter}` : `0 ${variables.gutter}`};
+    /* padding: ${({ grid }) =>
+      grid ? `0 0 0 ${variables.gutter}` : `0 ${variables.gutter}`}; */
   }
 
   @media only screen and (max-width: ${variables.breakpointTablet}) {

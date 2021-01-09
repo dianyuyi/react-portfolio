@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import variables from "./variables";
+import variables from "./common/variables";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
@@ -18,8 +18,8 @@ export const Nav = styled.nav`
   }
 `;
 export const LogoImg = styled.img`
-  width: 60px;
-  filter: brightness(0.3);
+  width: 48px;
+  filter: brightness(0.6);
 `;
 
 export const NavContent = styled.div`
@@ -53,6 +53,7 @@ export const LngMenu = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   margin: 0px;
 `;
 export const LngBtn = styled.button`
@@ -63,15 +64,25 @@ export const LngBtn = styled.button`
   font-size: 1.15rem;
   padding-bottom: 2px;
   &.active {
-    border-bottom: solid 2px ${variables.primary};
-    padding-bottom: 0;
+    /* border-bottom: solid 2px ${variables.primary};
+    padding-bottom: 0; */
   }
 `;
 
 export const LngLine = styled.div`
+  position: absolute;
   height: 2px;
-  width: 24px;
+  width: 32px;
+  bottom: 0;
+  left: 0;
   background: ${variables.primary};
+  transition: 0.3s;
+  &.en {
+    transform: translateX(50px);
+  }
+  &.tw {
+    transform: translateX(2px);
+  }
 `;
 
 export const NavBtn = styled.div`

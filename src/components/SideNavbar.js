@@ -3,10 +3,11 @@ import React, { useRef } from "react";
 import { useDimensions } from "./use-dimensions";
 import { Navigation } from "./styles/sideNav/Navigation";
 import { MenuToggle } from "./styles/sideNav/MenuToggle";
-import { SideNav, SiderBg } from "./styles/sideNav/sidenavStyle";
+import { SideNav, SiderBg, SideNavLogo } from "./styles/sideNav/sidenavStyle";
+import NavLogo from "../assets/image/logo_loxi.svg";
 
 const sidebar = {
-  open: (height = 300) => ({
+  open: (height = 800) => ({
     clipPath: `circle(${height * 2 + 200}px at 90vw 36px)`,
     transition: {
       type: "spring",
@@ -38,8 +39,10 @@ const SideNavbar = () => {
       custom={height}
       ref={containerRef}
     >
-      {/* toggle={() => toggleOpen()} */}
       <SiderBg variants={sidebar} />
+      <SideNavLogo to="/">
+        <img src={NavLogo} alt="loxi" />
+      </SideNavLogo>
       <Navigation
         isSideOpen={isSideOpen}
         toggle={() => setIsSideOpen(!isSideOpen)}

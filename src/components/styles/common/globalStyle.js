@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   /* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500;700;900&display=swap'); */
+
 `;
 
 export const ResetStyle = createGlobalStyle`
@@ -82,5 +83,6 @@ button {
   padding: 0;
   border: none;
   background: none;
+  outline: none;
 }
 `;

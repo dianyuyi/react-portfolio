@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import variables from "./variables";
+import variables from "./common/variables";
 import MainBg from "../../assets/image/hero/hero_bg-min.jpg";
 
 export const HeroContainer = styled.div`
@@ -77,7 +77,7 @@ export const HeroH1 = styled.h1`
   padding: 1rem 0;
   margin-bottom: 0.5rem;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 4.5rem;
   letter-spacing: 0.5rem;
   color: ${variables.inverse};

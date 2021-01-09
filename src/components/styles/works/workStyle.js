@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import variables from "./variables";
+import variables from "../common/variables";
 import { Link } from "react-router-dom";
 
 export const WorksContainer = styled.div`
@@ -28,7 +28,7 @@ export const WorkWrapper = styled.div`
 
 export const WorkCard = styled.figure`
   width: 44%;
-  height: 320px;
+  height: 350px;
   margin: 2rem 3%;
   overflow: hidden;
   display: flex;
@@ -37,7 +37,7 @@ export const WorkCard = styled.figure`
   justify-content: center;
   position: relative;
   border-radius: 20px 20px 0px 0px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid ${variables.grey};
   transition: 0.2s ease;
 
   &:hover {
@@ -46,7 +46,11 @@ export const WorkCard = styled.figure`
       background: rgba(0, 0, 0, 0.1);
     } */
   }
-  @media only screen and (min-width: ${variables.breakpointLaptop}) {
+  @media only screen and (min-width: ${variables.breakpointLarge}) {
+    width: 20%;
+    margin: ${({ home }) => (home ? `2rem 2.5% 2rem 0` : `2rem 1.5%`)};
+  }
+  @media only screen and (min-width: ${variables.breakpointLaptop}) and (max-width: ${variables.breakpointLarge}) {
     width: 30%;
     margin: ${({ home }) => (home ? `2rem 6% 2rem 0` : `2rem 1.5%`)};
   }
@@ -78,7 +82,7 @@ export const WorkImg = styled.div`
 
 export const WorkInfo = styled.div`
   width: 100%;
-  height: 120px;
+  height: 150px;
   padding: 0 1rem;
   overflow: hidden;
   position: relative;
@@ -89,22 +93,41 @@ export const WorkTitle = styled.div`
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  line-height: 2rem;
-  margin-top: 0.5rem;
+  line-height: 1.5rem;
+  margin: 0.5rem 0 0.25rem 0;
+  /* overflow: hidden;
+  height: 1.65rem; */
 `;
 export const TextWrap = styled.div`
   font-family: "creamfont-1.1 regular";
   font-size: 1.05rem;
+  padding: 0.2rem 0;
+  position: relative;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 1.15rem;
+  max-height: 40px;
+
+  &:before {
+    content: "...";
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    height: 20px;
+    padding: 0px 3px;
+    background: ${variables.inverse};
+  }
 `;
 
 export const MoreBtn = styled(Link)`
   position: absolute;
   right: 1rem;
+  font-family: "creamfont-1.1 regular";
   font-size: 1.05rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
-  padding: 0.1rem 1.5rem;
-  margin: 0.5rem 0;
+  padding: 0.35rem 1.5rem;
+  margin: 0.5rem 0 0 0;
   border-radius: 25px;
   background: ${variables.primary};
   color: ${variables.inverse};

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import variables from "./variables";
+import variables from "../common/variables";
 
 export const TagList = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ export const TagList = styled.div`
   align-items: center;
   padding: 2rem 0 1rem 0;
   margin: 0 ${variables.gutter};
-  border-bottom: solid 1px #ccc;
+  border-bottom: solid 1px ${variables.grey};
 `;
 
 export const TagBtn = styled.button`
@@ -23,7 +23,8 @@ export const TagBtn = styled.button`
   cursor: pointer;
   transition: 0.3s;
 
-  &:hover {
+  &:hover,
+  &.active {
     transform: translate(1px, 2px);
     background: ${variables.primary};
     color: ${variables.inverse};

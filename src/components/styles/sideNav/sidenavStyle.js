@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import variables from "../variables";
+import variables from "../common/variables";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -34,7 +34,18 @@ export const SideNavBtn = styled.button`
   background: transparent;
   pointer-events: fill;
 `;
+export const SideNavLogo = styled(Link)`
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding: 0.5rem;
+  pointer-events: fill;
 
+  img {
+    width: 40px;
+    filter: brightness(0.6);
+  }
+`;
 export const SiderBg = styled(motion.div)`
   position: absolute;
   top: 0;
@@ -52,8 +63,15 @@ export const SideNavList = styled(motion.ul)`
   align-items: center;
   width: 100%;
   padding: 3rem 0;
+  margin-top: 10%;
   &.preventClick {
     pointer-events: none;
+    > li > a {
+      pointer-events: none;
+    }
+    > li > button {
+      pointer-events: none;
+    }
   }
 `;
 
@@ -78,6 +96,7 @@ export const SideNavLngBtn = styled.button`
   font-weight: 300;
   font-size: 1.15rem;
   padding-bottom: 2px;
+  pointer-events: fill;
   &.active {
     border-bottom: solid 2px ${variables.primary};
     padding-bottom: 0;

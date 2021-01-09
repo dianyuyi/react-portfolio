@@ -1,7 +1,10 @@
 import React, { Suspense } from "react";
 import { Route, Switch, useLocation, withRouter } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { ResetStyle, GlobalStyle } from "./components/styles/globalStyle";
+import {
+  ResetStyle,
+  GlobalStyle,
+} from "./components/styles/common/globalStyle";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,6 +13,7 @@ import SingleWork from "./pages/SingleWork";
 import Error from "./pages/Error";
 import Loading from "./components/Loading";
 import SideNavbar from "./components/SideNavbar";
+import Footer from "./components/Footer";
 
 const Layout = () => {
   const location = useLocation();
@@ -42,6 +46,7 @@ const Layout = () => {
           <Route path="*" component={Error} />
         </Switch>
       </AnimatePresence>
+      <Footer />
       {/* </Router> */}
     </>
   );

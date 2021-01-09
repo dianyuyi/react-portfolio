@@ -1,24 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
-// import Loading from "../components/Loading";
-import { useParams, Link } from "react-router-dom";
+import * as Fade from "react-reveal/Fade";
+import { useTranslation } from "react-i18next";
+import Loading from "../components/Loading";
+import { useParams } from "react-router-dom";
 import { useGlobalContext } from "../context";
+import {
+  IntroWorkWrapper,
+  IntroContainer,
+  IntroImg,
+  IntroName,
+  IntroDate,
+  IntroDescription,
+  IntroTagBox,
+  IntroLink,
+  IntroTag,
+  BackList,
+} from "../components/styles/works/single";
+import { BiLinkExternal } from "react-icons/bi";
+import { AiOutlineStop, AiOutlineBackward } from "react-icons/ai";
 
 const SingleWork = () => {
+  const { t } = useTranslation();
+
   const { workProjects, lng } = useGlobalContext();
   const [displayWork, setDisplayWork] = useState([]);
   const { id } = useParams();
-  useEffect(() => {
+  const fetchData = useCallback(() => {
     const workById = workProjects.filter((item) => item.id == id);
     setDisplayWork(workById);
-  }, [id]);
+  }, [id, workProjects]);
 
-  console.log(displayWork);
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
   return (
     <motion.div exit={{ opacity: 0 }}>
-      {/* <p>test</p>
-      <p>{id}</p> */}
-      {displayWork.map((item, index) => {
+      {displayWork.map((item) => {
         const {
           id,
           name_tw,
@@ -28,19 +47,58 @@ const SingleWork = () => {
           date,
           description_tw,
           description_en,
+          url,
         } = item;
+        const urlText = () => {
+          if (url) {
+            return "outer_link";
+          } else {
+            return "confidentiality_clause";
+          }
+        };
         return (
-          <div key={id}>
-            <img src={image} alt={name_en} />
-            <h2>{`${lng === "en" ? name_en : name_tw}`}</h2>
-            <ul>
-              {tag.map((value) => {
-                return <li>{value}</li>;
-              })}
-            </ul>
-            <p>{date}</p>
-            <p>{`${lng === "en" ? description_en : description_tw}`}</p>
-          </div>
+          <IntroWorkWrapper>
+            <IntroContainer key={id} content={"left"}>
+              <Fade left>
+                <IntroImg
+                  src={image}
+                  alt={name_en}
+                  effect="blur"
+                  visibleByDefault={true}
+                  placeholderSrc={<Loading />}
+                />
+              </Fade>
+            </IntroContainer>
+            <IntroContainer content={"right"}>
+              <Fade right>
+                <IntroName>{`${lng === "en" ? name_en : name_tw}`}</IntroName>
+
+                <IntroDate>Created in {date}</IntroDate>
+                <IntroDescription>{`${
+                  lng === "en" ? description_en : description_tw
+                }`}</IntroDescription>
+                <IntroTagBox>
+                  {tag.map((value, index) => {
+                    return <IntroTag key={index}>{value}</IntroTag>;
+                  })}
+                </IntroTagBox>
+                <IntroLink>
+                  <a
+                    href={url ? url : "#"}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    {url ? <BiLinkExternal /> : <AiOutlineStop />}
+                    <span>{t(urlText())}</span>
+                  </a>
+                </IntroLink>
+                <BackList to="/works">
+                  <AiOutlineBackward />
+                  <span>{t("back_list")}</span>
+                </BackList>
+              </Fade>
+            </IntroContainer>
+          </IntroWorkWrapper>
         );
       })}
     </motion.div>

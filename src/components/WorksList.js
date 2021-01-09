@@ -1,5 +1,5 @@
 import React from "react";
-import * as LinesEllipsis from "react-lines-ellipsis";
+// import * as LinesEllipsis from "react-lines-ellipsis";
 import { useGlobalContext } from "../context";
 import {
   WorksContainer,
@@ -10,7 +10,7 @@ import {
   WorkTitle,
   TextWrap,
   MoreBtn,
-} from "../components/styles/workStyle";
+} from "./styles/works/workStyle";
 
 const WorksList = ({ limit, grid, home }) => {
   const { workProjects, lng } = useGlobalContext();
@@ -36,13 +36,14 @@ const WorksList = ({ limit, grid, home }) => {
               <WorkInfo>
                 <WorkTitle>{lng === "en" ? name_en : name_tw}</WorkTitle>
                 <TextWrap>
-                  <LinesEllipsis
+                  {lng === "en" ? description_en : description_tw}
+                  {/* <LinesEllipsis
                     text={lng === "en" ? description_en : description_tw}
                     maxLine="1"
                     ellipsis="..."
                     trimRight
                     basedOn="letters"
-                  />
+                  /> */}
                 </TextWrap>
                 <MoreBtn to={`/work/${id}`}>{`> More`}</MoreBtn>
               </WorkInfo>

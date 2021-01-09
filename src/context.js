@@ -41,13 +41,14 @@ const AppProvider = ({ children }) => {
   const filterByTag = (tag) => {
     if (tag === "All") {
       setWorkProjects(localData);
+      setActiveTag("All");
       return;
     }
     const filterWorks = localData.filter((item) =>
       item.tag.find((value) => value === tag)
     );
     setWorkProjects(filterWorks);
-    console.log(filterWorks);
+    // console.log(filterWorks);
 
     setActiveTag(tag);
   };

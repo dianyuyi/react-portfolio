@@ -159,9 +159,9 @@ const data = [
     tag: ["Website", "UI", "html/css"],
     date: "2019~2020",
     description_tw:
-      "主要販賣母嬰商品的電商網站。前後台網站都是自製版型，因此必須根據現有的網站架構，與後端工程師進行溝通、架構維護，並製作供客服部門使用的操作文件。在我任職期間曾進行兩項大型功能改版，為電子發票、行動支付的串接流程，前者在2019年10月上線，後者則在2020年7月上線。",
+      "主要販賣母嬰商品的電商網站。前後台網站都是自製版型，因此必須根據現有的網站架構，與後端工程師進行溝通、架構維護，並製作供客服部門使用的操作文件。網頁前端的負責人只有我一人，因此除了處理所有技術和文件，也同時具有與客服部門、企劃部門等各單位高效協調溝通的能力。在任職期間曾進行兩項大型功能改版，為電子發票、行動支付的串接流程，前者在2019年10月上線，後者則在2020年7月上線。",
     description_en:
-      "An e-commerce website that mainly sells maternal and child products. The front-end and back-end websites are all self-made versions. Therefore, it is necessary to communicate with the back-end engineers, maintain the structure according to the existing website structure, and produce operating files for the customer service department. During my tenure, I have carried out two major functional revisions, which are the serial process of electronic invoices and mobile payment. The former was launched in October 2019 and the latter was launched in July 2020.",
+      "An e-commerce website that mainly sells maternal and child products. The front-end and back-end websites are all self-made versions. Therefore, it is necessary to communicate with the back-end engineers, maintain the structure according to the existing website structure, and produce operating files for the customer service department. I am the only person in charge of the front-end of the web page. In addition to handling all technologies and documents, I also have the ability to efficiently coordinate and communicate with the customer service department, planning department and other units. During my tenure, I have carried out two major functional revisions, which are the serial process of electronic invoices and mobile payment. The former was launched in October 2019 and the latter was launched in July 2020.",
     url: "https://www.lavida.com.tw",
   },
   {
@@ -191,7 +191,7 @@ const data = [
     tag: ["App", "UI", "html/css"],
     date: "2019",
     description_tw:
-      "根據發案方上傳到zeplin的既有設計稿，進行各頁面切版的工作。因為單純是界面改版，不需要更動系統，所以這個專案我單純只負責產出UI頁面。",
+      "根據發案方上傳到zeplin的既有設計稿，進行各頁面切版的工作。因為單純是界面改版，不需要更動系統，所以此專案單純只負責產出UI頁面的工作。",
     description_en:
       "According to the existing design draft uploaded to zeplin by the originator, the work of each page is cut. Because it is simply an interface revision and no system changes are required, I am only responsible for producing UI pages for this project.",
     url: "",
@@ -207,10 +207,10 @@ const data = [
     tag: ["App", "UI"],
     date: "2019",
     description_tw:
-      "給自行車紀錄里程數據，並上傳到官網雲端資料庫的APP。加入專案時，該APP需要增加新藍牙裝置使用的頁面，因此我負責製作：腳踏車裝置選擇、心率介面、資料上傳清單等新UI。儘管後來突然追加不在工作日程表上的離線資料庫需求，讓所有人和發案方都有些不愉快，功能最後還是有完成。",
+      "給自行車紀錄里程數據，並上傳到官網雲端資料庫的APP。加入專案時，該APP需要增加新藍牙裝置使用的頁面，因此負責製作：腳踏車裝置選擇、心率介面、資料上傳清單等新UI。由於團隊後端成員居多，除負責大多數前端介面工作，也時常需要在會議上互相協調。專案後期發案方突然追加不在工作日程表上的離線資料庫需求，導致團隊和發案方有些衝突，最後在複數成員互相支援的情況下，在死線前成功提交功能。",
     description_en:
-      "Record the mileage data of the bicycle and upload it to the APP of the official website cloud database. When joining the project, the APP needs to add a page for the new Bluetooth device, so I am responsible for making new UIs such as bicycle device selection, heart rate interface, and data upload list. Although the offline database requirements that were not on the work schedule were suddenly added later, which made everyone and the issuer a little unhappy, the function was finally completed.",
-    url: "",
+      "Record the mileage data of the bicycle and upload it to the APP of the official website cloud database. When joining the project, the APP needs to add a page for the new Bluetooth device, so I am responsible for making new UIs such as bicycle device selection, heart rate interface, and data upload list. Since most of the back-end team members are in the team, I am not only responsible for most of the front-end interface work, but also often need to coordinate with each other in meetings. In the later stage of the project, the issuer suddenly added an offline database requirement that was not on the work schedule, causing some conflicts between the team and the issuer. Finally, with multiple members supporting each other, the function was successfully submitted before the deadline.",
+    url: "https://www.arofly.com/main/",
   },
   {
     id: 9,
@@ -223,9 +223,9 @@ const data = [
     tag: ["App", "UI"],
     date: "2019",
     description_tw:
-      "配合外部連接的跑步機藍芽，記錄資料並上傳雲端資料庫的運動型APP。接手專案時，我主要負責測試新儀器面板及藍牙的資料傳輸穩定性，以及調整部份舊UI。",
+      "配合外部連接的跑步機藍芽，記錄資料並上傳雲端資料庫的運動型APP。接手專案時，主要負責測試新儀器面板及藍牙的資料傳輸穩定性，以及調整部份舊UI。工作方式是將儀器的USB與電腦相連接後啟動程式，對照回傳的資料是否正確，並依照新的UI需求微調資料算式，同時也需要測試極端值的容忍度。",
     description_en:
-      "Cooperate with the externally connected treadmill Bluetooth to record data and upload the sports APP in the cloud database. When I took over the project, I was mainly responsible for testing the stability of the new instrument panel and Bluetooth data transmission, and adjusting some of the old UI.",
+      "Cooperate with the externally connected treadmill Bluetooth to record data and upload the sports APP in the cloud database. When I took over the project, I was mainly responsible for testing the stability of the new instrument panel and Bluetooth data transmission, and adjusting some of the old UI. The working method is to connect the USB of the instrument to the computer and start the program, check whether the returned data is correct, and fine-tune the data calculation according to the new UI requirements. At the same time, it is also necessary to test the tolerance of extreme values.",
     url: "",
   },
   {

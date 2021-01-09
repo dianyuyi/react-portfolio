@@ -3,7 +3,7 @@ export default {
   inverse: "#fff",
   // colors
   darkGrey: "#4d4d4d",
-  black: "#222",
+  grey: "#ccc",
 
   // grid
   width: "90%",
@@ -12,7 +12,7 @@ export default {
   breakpointPhone: "850px",
   breakpointTablet: "1024px",
   breakpointLaptop: "1200px",
-  breakpointLarge: "60em", // 960px
+  breakpointLarge: "1800px",
 
   //home & page : title set
   dirLeft: "0 0 0 5%",

@@ -33,20 +33,10 @@ function Navbar() {
           <NavLink to="/works">{t(`work_title`)}</NavLink>
         </NavMenu>
         <LngMenu>
-          <LngBtn
-            className={`${lng === "tw" ? "active" : ""}`}
-            onClick={() => changeLanguage("tw")}
-          >
-            {t(`TW`)}
-          </LngBtn>
-          <LngBtn
-            className={`${lng === "en" ? "active" : ""}`}
-            onClick={() => changeLanguage("en")}
-          >
-            {t(`EN`)}
-          </LngBtn>
+          <LngBtn onClick={() => changeLanguage("tw")}>{t(`TW`)}</LngBtn>
+          <LngBtn onClick={() => changeLanguage("en")}>{t(`EN`)}</LngBtn>
+          <LngLine className={lng} />
         </LngMenu>
-        {/* <LngLine /> */}
       </NavContent>
     </Nav>
   );

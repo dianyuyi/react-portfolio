@@ -1,6 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../context";
-import { TagList, TagBtn } from "../components/styles/tag";
+import { TagList, TagBtn } from "./styles/works/tag";
 
 const TagMenu = () => {
   const { allTags, setActiveTag, activeTag, filterByTag } = useGlobalContext();

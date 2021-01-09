@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import variables from "./variables";
+import variables from "./common/variables";
 import InkBg from "../../assets/image/ink_bg.png";
 
 export const MainBg = styled.div`
@@ -11,8 +11,9 @@ export const MainBg = styled.div`
 `;
 export const FlexContainer = styled.div`
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
   @media only screen and (max-width: ${variables.breakpointTablet}) {
-    display: flex;
     flex-direction: column;
   }
 `;

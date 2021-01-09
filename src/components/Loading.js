@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { useState } from "react";
 import { css } from "@emotion/core";
 import { useGlobalContext } from "../context";
 import CircleLoader from "react-spinners/CircleLoader";
 
 const Loading = () => {
   const { webLoading, setWebLoading } = useGlobalContext();
-  const [color, setColor] = React.useState("#ffffff");
+  const [color, setColor] = React.useState("#ccc");
 
   const override = css`
     display: block;

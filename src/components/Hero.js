@@ -22,11 +22,11 @@ const Hero = () => {
   const { t } = useTranslation();
   return (
     <HeroContainer>
-      {/* <LazyLoad height={0} offset={0}> */}
       <HeroBg>
-        <img className="LogoImg" src={LogoBg} alt="loxi" />
+        <LazyLoad height={200}>
+          <img className="LogoImg" src={LogoBg} alt="loxi" />
+        </LazyLoad>
       </HeroBg>
-      {/* </LazyLoad> */}
       <HeroContent>
         <HeroItems>
           <Fade left cascade ssrFadeout>
