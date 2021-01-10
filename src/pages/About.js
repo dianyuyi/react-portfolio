@@ -6,17 +6,14 @@ import Title from "../components/Title";
 import { ResumeBar, ResumeBtn } from "../components/styles/aboutStyle";
 
 const About = () => {
+  const reUrl = "https://www.cakeresume.com/xi-lo";
   return (
     <motion.div exit={{ opacity: 0 }}>
       <Title heading={"about_title"} home={false} />
       <Profile />
       {/* <SocialMedia iconColor={"black"} /> */}
       <ResumeBar>
-        <ResumeBtn
-          to="https://www.cakeresume.com/xi-lo"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
+        <ResumeBtn to={reUrl} target="_blank" rel="noreferrer noopener">
           》 Resume
         </ResumeBtn>
       </ResumeBar>
