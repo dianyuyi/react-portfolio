@@ -1,29 +1,11 @@
 import React, { useState, useContext, useEffect } from "react";
-// import useGoogleSheets from "use-google-sheets";
+// import { getData } from "./googleSheet.js";
 import localData from "./data/workProject";
 // import testdata from "./data/testdata";
 
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  // local: data json
-  // useEffect(() => {
-  //   setWorkProjects(testdata);
-  // }, [workProjects]);
-
-  // online: google sheet
-  // const { data, loading, error } = useGoogleSheets({
-  //   apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
-  //   sheetId: process.env.REACT_APP_GOOGLE_SHEETS_ID,
-  //   sheetsNames: ["Sheet1"],
-  // });
-  // const googleData = JSON.stringify(data);
-  // console.log(data);
-  // console.log(JSON.parse(data.data));
-  // console.log(JSON.parse(googleData);
-
-  // const dataSource = googleData ? googleData : localData;
-
   const TagList = [...new Set(localData.map((item) => item.tag))];
   const allTag = new Set([
     ...TagList.reduce((prev, next) => prev.concat(next)),
@@ -53,7 +35,17 @@ const AppProvider = ({ children }) => {
     setActiveTag(tag);
   };
 
-  useEffect(() => {}, [workProjects]);
+  useEffect(() => {
+    // (async () => {
+    //   const resp = await getData(process.env.REACT_APP_GOOGLE_SHEETS_ID, 0);
+    //   // console.log("google test :" + resp);
+    //   if (resp) {
+    //     setWorkProjects(resp);
+    //   } else {
+    //     setWorkProjects([]);
+    //   }
+    // })();
+  }, [workProjects]);
 
   return (
     <AppContext.Provider

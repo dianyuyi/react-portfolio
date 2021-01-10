@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Profile from "../components/Profile";
 import WorksList from "../components/WorksList";
 import Title from "../components/Title";
-import SubmitForm from "../components/SubmitForm";
+import SubmitForm from "../components/Form/SubmitForm";
 import { MainBg, FlexContainer } from "../components/styles/home";
 
 const Home = () => {

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import variables from "./common/variables";
+import { Link } from "react-router-dom";
 
 export const AboutContainer = styled.div`
   width: ${({ grid }) => (grid ? `${grid}%` : `100%`)};
@@ -75,5 +76,27 @@ export const IntroInner = styled.div`
   @media only screen and (max-width: ${variables.breakpointTablet}) {
     padding: 1rem 1.5rem;
     margin: -2rem -2rem 0 0;
+  }
+`;
+
+export const ResumeBar = styled.div`
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 10% 5% 0;
+`;
+
+export const ResumeBtn = styled(Link)`
+  border: 1px solid ${variables.darkGrey};
+  color: ${variables.primary};
+  font-family: "creamfont-1.1 regular";
+  font-size: 1.15rem;
+  font-weight: 300;
+  padding: 1rem 1.5rem;
+  box-shadow: inset -2px -2px 0 rgba(0, 0, 0, 1);
+  transition: 0.3s;
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.5);
   }
 `;

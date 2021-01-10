@@ -15,14 +15,14 @@ const Loading = () => {
   `;
 
   return (
-    <div>
+    <LoadingBox>
       <CircleLoader
         color={color}
         loading={webLoading}
         css={override}
         size={150}
       />
-    </div>
+    </LoadingBox>
     // <LoadingBox>
     //   <div className="box">
     //     <svg

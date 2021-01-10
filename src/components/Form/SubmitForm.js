@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import * as emailjs from "emailjs-com";
 import {
   FormContainer,
   FormWrapper,
   FormLineBox,
   SubmitBtn,
-} from "../components/styles/form";
+} from "../styles/form";
 
 const SubmitForm = ({ grid }) => {
   const { t } = useTranslation();
@@ -15,9 +16,57 @@ const SubmitForm = ({ grid }) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const submitRequest = async (e) => {
+  const clearForm = () => {
+    setName("");
+    setSubject("");
+    setEmail("");
+    setMessage("");
+  };
+  const submitRequest = (e) => {
     e.preventDefault();
     console.log({ name, subject, email, message });
+
+    let templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Loxi",
+      to_email: "dianyuyi@gmail.com",
+      subject: subject,
+      message: message,
+    };
+    emailjs
+      .send(
+        "service_2z48bgx",
+        "template_w43n7a3",
+        templateParams,
+        process.env.REACT_APP_EMAILJS_API_KEY
+      )
+      .then(
+        (res) => {
+          alert("Message Sent.Thank you!");
+          console.log(res.text);
+          clearForm();
+        },
+        (error) => {
+          alert("Message Sent Fail. Check the net?");
+          console.log(error.text);
+        }
+      );
+
+    // const response = await fetch("/access", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-type": "application/json",
+    //   },
+    //   body: JSON.stringify({ name, subject, email, message }),
+    // });
+    // const resData = await response.json();
+    // if (resData.status === "success") {
+    //   alert("Message Sent.");
+    //   this.resetForm();
+    // } else if (resData.status === "fail") {
+    //   alert("Message failed to send.");
+    // }
   };
 
   return (

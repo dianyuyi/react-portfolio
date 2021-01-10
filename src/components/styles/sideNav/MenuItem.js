@@ -58,6 +58,15 @@ export const MenuItem = ({ toggle }) => {
         <SideNavLink to="/works">{t(`work_title`)}</SideNavLink>
       </SideNavListItem>
       <SideNavListItem
+        onClick={toggle}
+        variants={variants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <SideNavLink to="/contact">{t(`contact_title`)}</SideNavLink>
+      </SideNavListItem>
+
+      <SideNavListItem
         variants={variants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}

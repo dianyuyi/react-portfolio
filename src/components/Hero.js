@@ -2,10 +2,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
 import config from "react-reveal/globals";
-import LazyLoad from "react-lazyload";
 import {
   HeroContainer,
   HeroBg,
+  BgLogo,
   HeroContent,
   HeroItems,
   HeroH1,
@@ -23,9 +23,8 @@ const Hero = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <LazyLoad height={200}>
-          <img className="LogoImg" src={LogoBg} alt="loxi" />
-        </LazyLoad>
+        <BgLogo src={LogoBg} alt="loxi" effect="blur" visibleByDefault={true} />
+        {/* <img className="LogoImg" src={LogoBg} alt="loxi" /> */}
       </HeroBg>
       <HeroContent>
         <HeroItems>

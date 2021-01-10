@@ -20,5 +20,8 @@
   "form_subject":"主旨",
   "form_email":"Email",
   "form_message":"信件內容",
-  "form_submit":"送出"
+  "form_submit":"送出",
+  "=============Error Page============":"=======Error Page====",
+  "error_msg":"哇咧...搞砸啦...",
+  "error_back":"回首頁看看 (ˊ˙w˙ˋ)?"
 }

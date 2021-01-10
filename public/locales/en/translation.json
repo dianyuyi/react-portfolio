@@ -20,7 +20,10 @@
   "form_subject":"Subject",
   "form_email":"Email",
   "form_message":"Message",
-  "form_submit":"Submit"
+  "form_submit":"Submit",
+  "=============Error Page============":"=======Error Page====",
+  "error_msg":"Ohhh...it's mess up...",
+  "error_back":"Back index (ˊ˙w˙ˋ)?"
 
 
 }

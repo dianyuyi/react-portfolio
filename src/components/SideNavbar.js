@@ -40,7 +40,7 @@ const SideNavbar = () => {
       ref={containerRef}
     >
       <SiderBg variants={sidebar} />
-      <SideNavLogo to="/">
+      <SideNavLogo to="/" onClick={() => setIsSideOpen(!isSideOpen)}>
         <img src={NavLogo} alt="loxi" />
       </SideNavLogo>
       <Navigation

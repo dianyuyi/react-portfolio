@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Works from "./pages/Works";
+import Contact from "./pages/Contact";
 import SingleWork from "./pages/SingleWork";
 import Error from "./pages/Error";
 import Loading from "./components/Loading";
@@ -43,6 +44,7 @@ const Layout = () => {
           <Route path="/about" component={About} />
           <Route path="/works" component={Works} />
           <Route path="/work/:id" component={SingleWork} />
+          <Route path="/contact" component={Contact} />
           <Route path="*" component={Error} />
         </Switch>
       </AnimatePresence>

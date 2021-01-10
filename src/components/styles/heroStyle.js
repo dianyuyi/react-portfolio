@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import variables from "./common/variables";
 import MainBg from "../../assets/image/hero/hero_bg-min.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -50,6 +52,14 @@ export const HeroBg = styled.div`
     /* width: 100%; */
     height: 120vh;
   }
+`;
+
+export const BgLogo = styled(LazyLoadImage)`
+  position: relative;
+  top: -3rem;
+  left: -5rem;
+  /* width: 100%; */
+  height: 120vh;
 `;
 export const HeroContent = styled.div`
   z-index: 3;

@@ -31,6 +31,7 @@ function Navbar() {
           {/* <Trans i18nKey="about_title">About Me</Trans> */}
           <NavLink to="/about">{t(`about_title`)}</NavLink>
           <NavLink to="/works">{t(`work_title`)}</NavLink>
+          <NavLink to="/contact">{t(`contact_title`)}</NavLink>
         </NavMenu>
         <LngMenu>
           <LngBtn onClick={() => changeLanguage("tw")}>{t(`TW`)}</LngBtn>
