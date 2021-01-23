@@ -1,19 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Profile from "../components/Profile";
-import Title from "../components/Title";
-// import SocialMedia from "../components/SocialMedia";
+import { Profile, Title } from "../components";
 import { ResumeBar, ResumeBtn } from "../components/styles/aboutStyle";
 
 const About = () => {
-  const reUrl = "https://www.cakeresume.com/xi-lo";
+  const url = "https://www.cakeresume.com/xi-lo";
+  const ResumeUrl = (e) => {
+    e.preventDefault();
+    // window.location.href = url;
+    window.open(url, "_blank");
+  };
   return (
     <motion.div exit={{ opacity: 0 }}>
       <Title heading={"about_title"} home={false} />
       <Profile />
       {/* <SocialMedia iconColor={"black"} /> */}
       <ResumeBar>
-        <ResumeBtn to={reUrl} target="_blank" rel="noreferrer noopener">
+        <ResumeBtn
+          onClick={(e) => ResumeUrl(e)}
+          // to={url}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           》 Resume
         </ResumeBtn>
       </ResumeBar>

@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import SubmitForm from "../components/Form/SubmitForm";
-import Title from "../components/Title";
+import { Title, SubmitForm } from "../components";
 
 const Contact = () => {
   return (

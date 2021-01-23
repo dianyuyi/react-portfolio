@@ -3,7 +3,7 @@ import { useGlobalContext } from "../context";
 import { TagList, TagBtn } from "./styles/works/tag";
 
 const TagMenu = () => {
-  const { allTags, setActiveTag, activeTag, filterByTag } = useGlobalContext();
+  const { allTags, activeTag, filterByTag } = useGlobalContext();
   // const Tags = Array.from(allTags);
   // const handleClick = (e) => {
   // e.preventDefault();

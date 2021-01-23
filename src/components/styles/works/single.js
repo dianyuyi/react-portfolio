@@ -14,9 +14,9 @@ export const IntroWorkWrapper = styled.div`
 
 export const IntroContainer = styled.div`
   display: block;
-  width: ${({ content }) => (content == "left" ? `55%` : `40%`)};
+  width: ${({ content }) => (content === "left" ? `55%` : `40%`)};
   padding-left: ${({ content }) =>
-    content == "left" ? `0` : `${variables.gutter}`};
+    content === "left" ? `0` : `${variables.gutter}`};
   @media only screen and (max-width: ${variables.breakpointPhone}) {
     width: 100%;
     padding-left: 0;

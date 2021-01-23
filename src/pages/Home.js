@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Hero from "../components/Hero";
-import Profile from "../components/Profile";
-import WorksList from "../components/WorksList";
-import Title from "../components/Title";
-import SubmitForm from "../components/Form/SubmitForm";
+import { Hero, Profile, WorksList, Title, SubmitForm } from "../components";
 import { MainBg, FlexContainer } from "../components/styles/home";
 
 const Home = () => {

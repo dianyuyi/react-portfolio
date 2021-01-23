@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useGlobalContext } from "../context";
 import { useTranslation } from "react-i18next";
 import {

@@ -1,0 +1,11 @@
+export { default as Navbar } from "./Navbar";
+export { default as Footer } from "./Footer";
+export { default as Loading } from "./Loading";
+export { default as Hero } from "./Hero";
+export { default as Profile } from "./Profile";
+export { default as SideNavbar } from "./SideNavbar";
+export { default as SocialMedia } from "./SocialMedia";
+export { default as TagMenu } from "./TagMenu";
+export { default as Title } from "./Title";
+export { default as WorksList } from "./WorksList";
+export { default as SubmitForm } from "./Form/SubmitForm";

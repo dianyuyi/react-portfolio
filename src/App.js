@@ -5,16 +5,8 @@ import {
   ResetStyle,
   GlobalStyle,
 } from "./components/styles/common/globalStyle";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Works from "./pages/Works";
-import Contact from "./pages/Contact";
-import SingleWork from "./pages/SingleWork";
-import Error from "./pages/Error";
-import Loading from "./components/Loading";
-import SideNavbar from "./components/SideNavbar";
-import Footer from "./components/Footer";
+import { Navbar, Loading, Footer, SideNavbar } from "./components";
+import { Home, About, Works, Contact, SingleWork, Error } from "./pages";
 
 const Layout = () => {
   const location = useLocation();

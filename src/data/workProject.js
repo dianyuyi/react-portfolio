@@ -1,5 +1,21 @@
 const data = [
   {
+    id: 23,
+    name_tw: "抽象絲綢",
+    name_en: "Abstract silk",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1611376207/assets/webworks/Abstract_silk__resize_sfqhky.png",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/v1611376207/assets/webworks/Abstract_silk__resize_sfqhky.png",
+    tag: ["P5.js", "Digital"],
+    date: "2021",
+    description_tw:
+      "讓線與點重複堆疊，形成類似絲線編織的抽象圖騰。靈感基本上來自美國抽象大師Paul Jackson Pollock，他的後期作品大致上都是以抽象線條交疊而成，重點在於線條之間形成的空間比例。",
+    description_en:
+      "Repeatedly stack lines and dots to form an abstract totem similar to silk weaving. The inspiration is basically from the American abstract painter Paul Jackson Pollock. His later works are roughly made up of overlapping abstract lines, focusing on the spatial proportions formed between the lines.",
+    url: "https://www.openprocessing.org/sketch/1029931",
+  },
+  {
     id: 22,
     name_tw: "綻光",
     name_en: "Shine from dark",
@@ -8,7 +24,7 @@ const data = [
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609421942/assets/artworks/%E7%B6%BB%E5%85%89_resize_gedjin.jpg",
     tag: ["Digital", "Graphic"],
-    date: "2020",
+    date: "2021",
     description_tw:
       "靈感發想來自於從寒冷高空中綻放的煙火。本身帶有對生於黑暗，卻不屈服於絕望之人的祝福。希望抱持正面態度，為充滿希望的未來而努力。",
     description_en:

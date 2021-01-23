@@ -5,7 +5,7 @@ import { useGlobalContext } from "../context";
 import CircleLoader from "react-spinners/CircleLoader";
 
 const Loading = () => {
-  const { webLoading, setWebLoading } = useGlobalContext();
+  const { webLoading } = useGlobalContext();
   const [color, setColor] = React.useState("#ccc");
 
   const override = css`

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import * as Fade from "react-reveal/Fade";
 import { useTranslation } from "react-i18next";
-import Loading from "../components/Loading";
+import { Loading } from "../components";
 import { useParams } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import {
