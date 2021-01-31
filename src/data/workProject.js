@@ -1,5 +1,22 @@
 const data = [
   {
+    id: 24,
+    name_tw: "亂心",
+    name_en: "Contradictory mind",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1612106161/assets/artworks/%E4%BA%82%E5%BF%83_resize_grwmrz.jpg",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,w_600/v1612106161/assets/artworks/%E4%BA%82%E5%BF%83_resize_grwmrz.jpg",
+    tag: ["Digital", "Graphic"],
+    date: "2021",
+    description_tw:
+      "對心靈矛盾面的抽象演繹。當黑暗憂鬱的一面被歡樂奔放的色彩覆蓋時，看似豐富明亮的色彩底下，依然留有沈滯的壓迫感。儘管是處在天秤兩端的矛盾人格，但人們所見仍皆為真實，不存在虛假之物。",
+    description_en:
+      "An abstract interpretation of the contradictory aspects of the mind. When the dark and melancholic side is covered by cheerful and unrestrained colors, underneath the seemingly rich and bright colors, there is still a sense of oppression. Although it is a contradictory personality at both ends of Libra, what people see is still true, and there is no false thing.",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1612106161/assets/artworks/%E4%BA%82%E5%BF%83_resize_grwmrz.jpg",
+  },
+  {
     id: 23,
     name_tw: "抽象絲綢",
     name_en: "Abstract silk",
