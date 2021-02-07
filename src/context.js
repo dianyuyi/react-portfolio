@@ -40,7 +40,7 @@ const AppProvider = ({ children }) => {
       simpleSheet: true,
     })
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         const reData = data.reverse();
         setGoogleData(reData);
         setWorkProjects(reData);

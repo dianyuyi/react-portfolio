@@ -9,7 +9,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 // import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.Fragment>
+  <React.StrictMode>
     <ParallaxProvider>
       <Router onUpdate={() => window.scrollTo(0, 0)}>
         <AppProvider>
@@ -17,7 +17,7 @@ ReactDOM.render(
         </AppProvider>
       </Router>
     </ParallaxProvider>
-  </React.Fragment>,
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
