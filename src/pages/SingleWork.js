@@ -37,7 +37,7 @@ const SingleWork = () => {
 
   return (
     <motion.div exit={{ opacity: 0 }}>
-      {displayWork.map((item) => {
+      {displayWork.map((item, index) => {
         const {
           id,
           name_tw,
@@ -49,6 +49,8 @@ const SingleWork = () => {
           description_en,
           url,
         } = item;
+        // google ver
+        const tagArr = tag.split(",");
         const urlText = () => {
           if (url) {
             return "outer_link";
@@ -57,7 +59,7 @@ const SingleWork = () => {
           }
         };
         return (
-          <IntroWorkWrapper>
+          <IntroWorkWrapper key={index}>
             <IntroContainer key={id} content={"left"}>
               <Fade left>
                 <IntroImg
@@ -78,7 +80,7 @@ const SingleWork = () => {
                   lng === "en" ? description_en : description_tw
                 }`}</IntroDescription>
                 <IntroTagBox>
-                  {tag.map((value, index) => {
+                  {tagArr.map((value, index) => {
                     return <IntroTag key={index}>{value}</IntroTag>;
                   })}
                 </IntroTagBox>

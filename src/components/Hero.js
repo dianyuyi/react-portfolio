@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
+import { Parallax } from "react-scroll-parallax";
+import * as Fade from "react-reveal/Fade";
 import config from "react-reveal/globals";
 import {
   HeroContainer,
@@ -23,8 +24,14 @@ const Hero = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <BgLogo src={LogoBg} alt="loxi" effect="blur" visibleByDefault={true} />
-        {/* <img className="LogoImg" src={LogoBg} alt="loxi" /> */}
+        <Parallax y={[-10, 10]} tagOuter="figure">
+          <BgLogo
+            src={LogoBg}
+            alt="loxi"
+            effect="blur"
+            visibleByDefault={true}
+          />
+        </Parallax>
       </HeroBg>
       <HeroContent>
         <HeroItems>

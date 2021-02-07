@@ -12,7 +12,7 @@ const data = [
     description_tw:
       "對心靈矛盾面的抽象演繹。當黑暗憂鬱的一面被歡樂奔放的色彩覆蓋時，看似豐富明亮的色彩底下，依然留有沈滯的壓迫感。儘管是處在天秤兩端的矛盾人格，但人們所見仍皆為真實，不存在虛假之物。",
     description_en:
-      "An abstract interpretation of the contradictory aspects of the mind. When the dark and melancholic side is covered by cheerful and unrestrained colors, underneath the seemingly rich and bright colors, there is still a sense of oppression. Although it is a contradictory personality at both ends of Libra, what people see is still true, and there is no false thing.",
+      "An abstract interpretation of the contradictory aspects of the mind. When the dark and melancholic side is covered by cheerful and unrestrained colors, underneath the seemingly rich and bright colors, there is still a sense of oppression. Although it is a contradictory personality at both ends of the scale, what people see is still true, and there is no false thing.",
     url:
       "https://res.cloudinary.com/loxi/image/upload/v1612106161/assets/artworks/%E4%BA%82%E5%BF%83_resize_grwmrz.jpg",
   },

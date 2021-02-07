@@ -41,7 +41,7 @@ export const HeroBg = styled.div`
   height: 100%;
   background-image: url(${MainBg});
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center center;
   overflow: hidden;
 
