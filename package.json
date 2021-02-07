@@ -25,9 +25,11 @@
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-scroll-parallax": "^2.3.5",
     "react-spinners": "^0.10.4",
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.2.1",
+    "tabletop": "^1.6.3",
     "use-google-sheets": "^1.2.0",
     "use-google-spreadsheet": "^0.4.2",
     "web-vitals": "^0.2.4"

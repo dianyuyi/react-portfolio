@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
+import * as Fade from "react-reveal/Fade";
 import {
   MainTitleContainer,
   MainTitle,

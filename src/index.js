@@ -4,17 +4,20 @@ import "./i18n";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { AppProvider } from "./context";
+import { ParallaxProvider } from "react-scroll-parallax";
 import { BrowserRouter as Router } from "react-router-dom";
-import * as serviceWorker from "./serviceWorker";
+// import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router onUpdate={() => window.scrollTo(0, 0)}>
-      <AppProvider>
-        <App />
-      </AppProvider>
-    </Router>
-  </React.StrictMode>,
+  <React.Fragment>
+    <ParallaxProvider>
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
+        <AppProvider>
+          <App />
+        </AppProvider>
+      </Router>
+    </ParallaxProvider>
+  </React.Fragment>,
   document.getElementById("root")
 );
 
@@ -22,4 +25,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-serviceWorker.register();
+// serviceWorker.register();

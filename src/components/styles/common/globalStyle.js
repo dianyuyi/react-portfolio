@@ -3,13 +3,13 @@ import "./fonts.css";
 
 export const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'creamfont-1.1 regular';
+    font-family: 'creamfont-1.1 regular',serif,'Noto Serif TC';
     /* font-family: serif,'Noto Serif TC'; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  /* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500;700;900&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500;700;900&display=swap');
 
 `;
 
