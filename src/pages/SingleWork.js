@@ -50,7 +50,7 @@ const SingleWork = () => {
           url,
         } = item;
         // google ver
-        const tagArr = tag.split(",");
+        // const tagArr = tag.split(",");
         const urlText = () => {
           if (url) {
             return "outer_link";
@@ -80,9 +80,12 @@ const SingleWork = () => {
                   lng === "en" ? description_en : description_tw
                 }`}</IntroDescription>
                 <IntroTagBox>
-                  {tagArr.map((value, index) => {
+                  {tag.map((value, index) => {
                     return <IntroTag key={index}>{value}</IntroTag>;
                   })}
+                  {/* {tagArr.map((value, index) => {
+                    return <IntroTag key={index}>{value}</IntroTag>;
+                  })} */}
                 </IntroTagBox>
                 <IntroLink>
                   <a

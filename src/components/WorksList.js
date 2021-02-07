@@ -13,8 +13,8 @@ import {
 } from "./styles/works/workStyle";
 
 const WorksList = ({ limit, grid, home }) => {
-  const { workProjects, lng, googleData } = useGlobalContext();
-  const newWorkProjects = limit ? googleData.slice(0, limit) : workProjects;
+  const { workProjects, lng, filterProjects } = useGlobalContext();
+  const newWorkProjects = limit ? workProjects.slice(0, limit) : filterProjects;
 
   // console.log(googleData);
   return (
