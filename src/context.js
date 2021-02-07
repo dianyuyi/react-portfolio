@@ -34,24 +34,24 @@ const AppProvider = ({ children }) => {
     const allTag = new Set(TagList);
     setAllTags(["All", ...allTag]);
   };
-  const fetchGoogleSheet = () => {
-    Tabletop.init({
-      key: process.env.REACT_APP_GOOGLE_SHEETS_ID,
-      simpleSheet: true,
-    })
-      .then((data) => {
-        // console.log(data);
-        const reData = data.reverse();
-        setGoogleData(reData);
-        setWorkProjects(reData);
-        fetchTag(data);
-        setWebLoading(false);
-      })
-      .catch((err) => {
-        setWebLoading(false);
-        console.log(err);
-      });
-  };
+  // const fetchGoogleSheet = () => {
+  //   Tabletop.init({
+  //     key: process.env.REACT_APP_GOOGLE_SHEETS_ID,
+  //     simpleSheet: true,
+  //   })
+  //     .then((data) => {
+  //       // console.log(data);
+  //       const reData = data.reverse();
+  //       setGoogleData(reData);
+  //       setWorkProjects(reData);
+  //       fetchTag(data);
+  //       setWebLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       setWebLoading(false);
+  //       console.log(err);
+  //     });
+  // };
   const filterByTag = (tag) => {
     if (tag === "All") {
       // setWorkProjects(localData);
@@ -79,7 +79,23 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     setWebLoading(true);
-    fetchGoogleSheet();
+    // fetchGoogleSheet();
+    Tabletop.init({
+      key: process.env.REACT_APP_GOOGLE_SHEETS_ID,
+      simpleSheet: true,
+    })
+      .then((data) => {
+        // console.log(data);
+        const reData = data.reverse();
+        setGoogleData(reData);
+        setWorkProjects(reData);
+        fetchTag(data);
+        setWebLoading(false);
+      })
+      .catch((err) => {
+        setWebLoading(false);
+        console.log(err);
+      });
   }, []);
 
   return (
