@@ -8,6 +8,20 @@ export const MainBg = styled.div`
   background-image: url(${InkBg});
   background-attachment: fixed;
   background-size: cover;
+  :before {
+    content: "";
+    background-image: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover;
+    background-size: cover !important;
+    z-index: -1;
+  }
 `;
 export const FlexContainer = styled.div`
   flex-wrap: wrap;

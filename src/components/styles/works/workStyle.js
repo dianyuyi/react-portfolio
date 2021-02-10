@@ -107,8 +107,11 @@ export const TextWrap = styled.div`
   word-break: break-all;
   line-height: 1.15rem;
   max-height: 40px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 
-  &:before {
+  /* &:before {
     content: "...";
     position: absolute;
     right: 0px;
@@ -116,7 +119,7 @@ export const TextWrap = styled.div`
     height: 20px;
     padding: 0px 3px;
     background: ${variables.inverse};
-  }
+  } */
 `;
 
 export const MoreBtn = styled(Link)`
