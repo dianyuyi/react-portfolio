@@ -1,5 +1,22 @@
 const data = [
   {
+    id: 25,
+    name_tw: "躁",
+    name_en: "Agonize",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1613490571/assets/artworks/%E8%BA%81_resize_lo5ilq.jpg",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,w_1000/v1613490571/assets/artworks/%E8%BA%81_resize_lo5ilq.jpg",
+    tag: ["Digital", "Graphic"],
+    date: "2021",
+    description_tw:
+      "在洋溢著和樂氣氛的農曆新年中，誕生的不合時宜之作。如同作品名稱，一切的衝突與負面情緒被掩蓋在節日氛圍的妥協中。但看不見的存在，不代表會消失。深藏的情感會持續燃燒，直至焦痕漸增的心靈再也無力修復為止。",
+    description_en:
+      "In the Lunar New Year with a harmonious atmosphere, untimely works were born. Just like the title of the work, all conflicts and negative emotions are concealed in the compromise of the festive atmosphere. But the invisible existence does not mean that it will disappear. The deep emotions will continue to burn until the scorched mind is no longer able to repair it.",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1613490571/assets/artworks/%E8%BA%81_resize_lo5ilq.jpg",
+  },
+  {
     id: 24,
     name_tw: "亂心",
     name_en: "Contradictory mind",
