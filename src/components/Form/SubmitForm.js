@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 // import { Parallax } from "react-scroll-parallax";
 import * as emailjs from "emailjs-com";
+import { init } from "emailjs-com";
 import {
   FormContainer,
   FormWrapper,
   FormLineBox,
   SubmitBtn,
 } from "../styles/form";
+
+init(process.env.REACT_APP_EMAILJS_API_KEY);
 
 const SubmitForm = ({ grid }) => {
   const { t } = useTranslation();
