@@ -29,6 +29,7 @@ const SubmitForm = ({ grid }) => {
   const submitRequest = (e) => {
     e.preventDefault();
     console.log({ name, subject, email, message });
+    console.log(process.env.REACT_APP_EMAILJS_API_KEY);
 
     let templateParams = {
       from_name: name,
