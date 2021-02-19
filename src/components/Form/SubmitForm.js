@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 // import { Parallax } from "react-scroll-parallax";
 import * as emailjs from "emailjs-com";
-import { init } from "emailjs-com";
 import {
   FormContainer,
   FormWrapper,
   FormLineBox,
   SubmitBtn,
 } from "../styles/form";
-
-init(process.env.REACT_APP_EMAILJS_API_KEY);
 
 const SubmitForm = ({ grid }) => {
   const { t } = useTranslation();
@@ -29,7 +26,6 @@ const SubmitForm = ({ grid }) => {
   const submitRequest = (e) => {
     e.preventDefault();
     console.log({ name, subject, email, message });
-    console.log(process.env.REACT_APP_EMAILJS_API_KEY);
 
     let templateParams = {
       from_name: name,
@@ -44,7 +40,8 @@ const SubmitForm = ({ grid }) => {
         "service_2z48bgx",
         "template_w43n7a3",
         templateParams,
-        process.env.REACT_APP_EMAILJS_API_KEY
+        "user_TLTeWNAZwqYt38SHgbmAG"
+        // process.env.REACT_APP_EMAILJS_API_KEY
       )
       .then(
         (res) => {
