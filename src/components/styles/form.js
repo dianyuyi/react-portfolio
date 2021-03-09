@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import variables from "./common/variables";
 import FormBg from "../../assets/image/textarea_bg_01.png";
+import FormBg_webp from "../../assets/image/textarea_bg_01.webp";
 
 export const FormContainer = styled.div`
   width: ${({ grid }) => (grid ? `${grid}%` : `100%`)};
@@ -11,7 +12,8 @@ export const FormContainer = styled.div`
   flex-direction: column;
   padding: ${({ grid }) => (grid ? `0 5% 0 0` : `0 5%`)};
   margin-top: 2rem;
-  background-image: url(${FormBg});
+  background-image: ${({ isWebp }) =>
+    isWebp ? `url(${FormBg_webp})` : `url(${FormBg})`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;

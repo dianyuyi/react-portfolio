@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import variables from "./common/variables";
 import InkBg from "../../assets/image/ink_bg.png";
+import InkBg_webp from "../../assets/image/ink_bg.webp";
 
 export const MainBg = styled.div`
   width: 100%;
   padding: 0;
-  background-image: url(${InkBg});
+  background-image: ${({ isWebp }) =>
+    isWebp ? `url(${InkBg_webp});` : `url(${InkBg});`};
   background-attachment: fixed;
   background-size: cover;
   :before {

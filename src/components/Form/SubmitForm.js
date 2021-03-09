@@ -8,8 +8,11 @@ import {
   FormLineBox,
   SubmitBtn,
 } from "../styles/form";
+import { useGlobalContext } from "../../context";
 
 const SubmitForm = ({ grid }) => {
+  const { isWebp } = useGlobalContext();
+
   const { t } = useTranslation();
 
   const [name, setName] = useState("");
@@ -72,7 +75,7 @@ const SubmitForm = ({ grid }) => {
   };
 
   return (
-    <FormContainer grid={grid}>
+    <FormContainer grid={grid} isWebp={isWebp}>
       {/* <Parallax y={[-10, 10]} tagOuter="div"> */}
       <FormWrapper>
         <form action="" onSubmit={submitRequest}>

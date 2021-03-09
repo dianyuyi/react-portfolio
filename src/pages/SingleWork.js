@@ -23,7 +23,7 @@ import { AiOutlineStop, AiOutlineBackward } from "react-icons/ai";
 const SingleWork = () => {
   const { t } = useTranslation();
 
-  const { workProjects, lng } = useGlobalContext();
+  const { workProjects, lng, isWebp } = useGlobalContext();
   const [displayWork, setDisplayWork] = useState([]);
   const { id } = useParams();
   const fetchData = useCallback(() => {
@@ -43,6 +43,7 @@ const SingleWork = () => {
           name_tw,
           name_en,
           image,
+          image_webp,
           tag,
           date,
           description_tw,
@@ -63,7 +64,7 @@ const SingleWork = () => {
             <IntroContainer key={id} content={"left"}>
               <Fade left>
                 <IntroImg
-                  src={image}
+                  src={isWebp ? image_webp : image}
                   alt={name_en}
                   effect="blur"
                   visibleByDefault={true}

@@ -13,7 +13,7 @@ import {
 } from "./styles/works/workStyle";
 
 const WorksList = ({ limit, grid, home }) => {
-  const { workProjects, lng, filterProjects } = useGlobalContext();
+  const { workProjects, lng, filterProjects, isWebp } = useGlobalContext();
   const newWorkProjects = limit ? workProjects.slice(0, limit) : filterProjects;
 
   // console.log(googleData);
@@ -25,6 +25,7 @@ const WorksList = ({ limit, grid, home }) => {
             id,
             name_tw,
             name_en,
+            image_webp,
             thumb,
             description_en,
             description_tw,
@@ -32,7 +33,11 @@ const WorksList = ({ limit, grid, home }) => {
           return (
             <WorkCard key={index}>
               <WorkImg>
-                <img alt={name_en} src={thumb} />
+                {isWebp && image_webp ? (
+                  <img alt={name_en} src={image_webp} />
+                ) : (
+                  <img alt={name_en} src={thumb} />
+                )}
               </WorkImg>
               <WorkInfo>
                 <WorkTitle>{lng === "en" ? name_en : name_tw}</WorkTitle>

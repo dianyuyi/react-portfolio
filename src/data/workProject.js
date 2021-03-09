@@ -5,6 +5,8 @@ const data = [
     name_en: "Agonize",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1613490571/assets/artworks/%E8%BA%81_resize_lo5ilq.jpg",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1615267895/assets/artworks/webp_file/%E8%BA%81_resize_ll6c39.webp",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,w_1000/v1613490571/assets/artworks/%E8%BA%81_resize_lo5ilq.jpg",
     tag: ["Digital", "Graphic"],
@@ -22,6 +24,8 @@ const data = [
     name_en: "Contradictory mind",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1612106161/assets/artworks/%E4%BA%82%E5%BF%83_resize_grwmrz.jpg",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1615268871/assets/artworks/webp_file/contradictory_mind_resize_zgvr1b.webp",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,w_600/v1612106161/assets/artworks/%E4%BA%82%E5%BF%83_resize_grwmrz.jpg",
     tag: ["Digital", "Graphic"],
@@ -39,6 +43,8 @@ const data = [
     name_en: "Abstract silk",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1611376207/assets/webworks/Abstract_silk__resize_sfqhky.png",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1615267898/assets/artworks/webp_file/Abstract_silk-_resize_odwgqy.webp",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1611376207/assets/webworks/Abstract_silk__resize_sfqhky.png",
     tag: ["P5.js", "Digital"],
@@ -55,6 +61,8 @@ const data = [
     name_en: "Shine from dark",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609421942/assets/artworks/%E7%B6%BB%E5%85%89_resize_gedjin.jpg",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1615267899/assets/artworks/webp_file/shine_from_dark_resize_rlcia6.webp",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609421942/assets/artworks/%E7%B6%BB%E5%85%89_resize_gedjin.jpg",
     tag: ["Digital", "Graphic"],
@@ -72,6 +80,8 @@ const data = [
     name_en: "Song of Ancient",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609769440/assets/webworks/Song_of_Ancient_iqnyyh.png",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1615267861/assets/artworks/webp_file/Song-of-Ancient_scwjre.webp",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609769440/assets/webworks/Song_of_Ancient_iqnyyh.png",
     tag: ["P5.js", "Digital"],
@@ -87,6 +97,8 @@ const data = [
     name_en: "Seawaves",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609769416/assets/webworks/seawaves_ytokkv.png",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1615267827/assets/artworks/webp_file/seawaves_vjbme3.webp",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609769416/assets/webworks/seawaves_ytokkv.png",
     tag: ["P5.js", "Digital"],
@@ -103,6 +115,7 @@ const data = [
     name_en: "Dawn",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609047654/assets/artworks/waterInk_abstract_01_y_vvxuev.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,e_sharpen:100,g_auto,h_1000,w_1000/v1609047654/assets/artworks/waterInk_abstract_01_y_vvxuev.jpg",
     tag: ["Digital", "Graphic"],
@@ -120,6 +133,7 @@ const data = [
     name_en: "Ink Mountains",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609753552/assets/webworks/landscape0_faldza.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609753552/assets/webworks/landscape0_faldza.jpg",
     tag: ["P5.js", "Digital"],
@@ -136,6 +150,7 @@ const data = [
     name_en: "Spring plum blossoms",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609047687/assets/artworks/waterInk_abstract_01_r_fpbpk1.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609047687/assets/artworks/waterInk_abstract_01_r_fpbpk1.jpg",
     tag: ["Digital", "Graphic"],
@@ -153,6 +168,7 @@ const data = [
     name_en: "Calligraphy Ink",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609753772/assets/webworks/inkDraw_nerkwd.png",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609753772/assets/webworks/inkDraw_nerkwd.png",
     tag: ["P5.js", "Digital"],
@@ -169,6 +185,7 @@ const data = [
     name_en: "Landscape and clouds",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609047672/assets/artworks/waterInk_abstract_02_b_byzpqc.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609047672/assets/artworks/waterInk_abstract_02_b_byzpqc.jpg",
     tag: ["Digital", "Graphic"],
@@ -186,6 +203,7 @@ const data = [
     name_en: "Spring tea feast",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609047658/assets/artworks/waterInk_abstract_02_g_migadj.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,h_1000,w_1000/v1609047658/assets/artworks/waterInk_abstract_02_g_migadj.jpg",
     tag: ["Digital", "Graphic"],
@@ -203,6 +221,7 @@ const data = [
     name_en: "LAVIDA",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609414179/assets/webworks/w-lavida_iauhkp.png",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609416100/assets/webworks/thumb/logo-lavida-standard_gug3hz.svg",
     alt: "LAVIDA",
@@ -220,6 +239,7 @@ const data = [
     name_en: "Ghost Story",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609401014/assets/artworks/book_ghoststory_eniebh.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/c_fill,h_500,w_500,y_0/v1609401014/assets/artworks/book_ghoststory_eniebh.jpg",
     tag: ["Book", "Digital", "Graphic"],
@@ -236,6 +256,7 @@ const data = [
     name_en: "EMS",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609414037/assets/webworks/app-ems_vccvhq.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609415129/assets/webworks/thumb/img_logo_b_bevsa2.png",
     tag: ["App", "UI", "html/css"],
@@ -252,6 +273,7 @@ const data = [
     name_en: "Arofly",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609413952/assets/webworks/app-arofly_gs40vn.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609414687/assets/webworks/thumb/arofly_logo_qv9aim.png",
     tag: ["App", "UI"],
@@ -268,6 +290,7 @@ const data = [
     name_en: "OMA",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609413968/assets/webworks/app-oma_jucwiu.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609414768/assets/webworks/thumb/logo_wkuuen.svg",
     tag: ["App", "UI"],
@@ -284,6 +307,7 @@ const data = [
     name_en: "IUN3: Loan app",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609413958/assets/webworks/app-iun3_grhswa.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609416676/assets/webworks/thumb/%E6%88%AA%E5%9C%96_2020-12-31_%E4%B8%8B%E5%8D%888.10.39_dqnyrk.png",
     tag: ["App", "UI", "Vue/Nuxt"],
@@ -300,6 +324,7 @@ const data = [
     name_en: "Lin Calligraphy",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609414210/assets/webworks/w-lin_hxkdqc.png",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609414899/assets/webworks/thumb/FB_link_ozbcy2.jpg",
     tag: ["Website", "UI", "Vue/Nuxt"],
@@ -316,6 +341,7 @@ const data = [
     name_en: "Shadow",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609401016/assets/artworks/book_shadow_g4pgsv.jpg",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,h_1000,w_1000/v1609401016/assets/artworks/book_shadow_g4pgsv.jpg",
     tag: ["Book", "Digital", "Graphic"],
@@ -332,6 +358,7 @@ const data = [
     name_en: "African swine fever information",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609414107/assets/webworks/w-baphiq_n7myex.png",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609415436/assets/webworks/thumb/head-title-ol4_khn1df.svg",
     tag: ["Website", "UI", "html/css"],
@@ -348,6 +375,7 @@ const data = [
     name_en: "COA-Eng",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609414171/assets/webworks/w-coa_en_dzcnsu.png",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609415554/assets/webworks/thumb/logo_coa_iwhjev.png",
     tag: ["Website", "UI", "html/css"],
@@ -364,6 +392,7 @@ const data = [
     name_en: "YF Academy",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609414201/assets/webworks/w-yf_puj6yu.png",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609415508/assets/webworks/thumb/logo_yf_ikcznj.png",
     tag: ["Website", "UI", "html/css"],
@@ -380,6 +409,7 @@ const data = [
     name_en: "3B1Q: Q&A List",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609413996/assets/webworks/w-4b1q_cod13m.png",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/v1609415578/assets/webworks/thumb/logo_cezgzc.png",
     tag: ["Website", "UI", "html/css"],
@@ -396,6 +426,7 @@ const data = [
     name_en: "Old graphic portfolio",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1609401025/assets/artworks/old_portfolio_exp9up.png",
+    image_webp: "",
     thumb:
       "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,h_1000,w_1000/v1609401025/assets/artworks/old_portfolio_exp9up.png",
     tag: ["Digital", "UI", "Graphic"],

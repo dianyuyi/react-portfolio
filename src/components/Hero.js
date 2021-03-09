@@ -11,22 +11,22 @@ import {
   HeroItems,
   HeroH1,
 } from "../components/styles/heroStyle";
-
+import LogoBg_webp from "../assets/image/hero/loxi_sign_resize-min.webp";
 import LogoBg from "../assets/image/hero/loxi_sign-min.png";
 
-// import Loading from "../components/Loading";
-// import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../context";
 
 const Hero = () => {
-  // const { webLoading } = useGlobalContext();
+  const { isWebp } = useGlobalContext();
+
   config({ ssrFadeout: true });
   const { t } = useTranslation();
   return (
     <HeroContainer>
-      <HeroBg>
+      <HeroBg isWebp={isWebp}>
         <Parallax y={[-10, 10]} tagOuter="figure">
           <BgLogo
-            src={LogoBg}
+            src={isWebp ? LogoBg_webp : LogoBg}
             alt="loxi"
             effect="blur"
             visibleByDefault={true}

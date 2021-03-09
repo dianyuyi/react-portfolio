@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import variables from "./common/variables";
 import MainBg from "../../assets/image/hero/hero_bg-min.jpg";
+import MainBg_webp from "../../assets/image/hero/hero_bg.webp";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -39,7 +41,9 @@ export const HeroBg = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(${MainBg});
+  /* background-image: url(${MainBg}); */
+  background-image: ${({ isWebp }) =>
+    isWebp ? `url(${MainBg_webp});` : `url(${MainBg});`};
   background-size: cover;
   /* background-attachment: fixed; */
   background-position: center center;

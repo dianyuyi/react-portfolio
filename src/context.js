@@ -3,6 +3,7 @@ import React, { useState, useContext, useEffect } from "react";
 import localData from "./data/workProject";
 // import testdata from "./data/testdata";
 // import Tabletop from "tabletop";
+import { isWebpSupported } from "react-image-webp/dist/utils";
 
 const AppContext = React.createContext();
 
@@ -20,6 +21,7 @@ const AppProvider = ({ children }) => {
   const [lng, setLng] = useState("en");
   const [allTags, setAllTags] = useState(["All", ...allTag]);
   const [activeTag, setActiveTag] = useState("All");
+  const isWebp = isWebpSupported();
 
   // console.log(workProjects);
   // console.log(allTags);
@@ -97,6 +99,7 @@ const AppProvider = ({ children }) => {
         setActiveTag,
         // googleData,
         filterProjects,
+        isWebp,
       }}
     >
       {children}

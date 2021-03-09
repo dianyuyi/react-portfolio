@@ -2,11 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Hero, Profile, WorksList, Title, SubmitForm } from "../components";
 import { MainBg, FlexContainer } from "../components/styles/home";
+import { useGlobalContext } from "../context";
 
 const Home = () => {
+  const { isWebp } = useGlobalContext();
+
   return (
     <motion.div exit={{ opacity: 0 }}>
-      <MainBg>
+      <MainBg isWebp={isWebp}>
         <Hero />
         <FlexContainer>
           <Title
