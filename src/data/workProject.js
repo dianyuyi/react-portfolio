@@ -1,5 +1,23 @@
 const data = [
   {
+    id: 26,
+    name_tw: "雲水",
+    name_en: "Cloud water",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1615394795/assets/artworks/cloud_water_sv5lme.png",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1615394905/assets/artworks/webp_file/cloud_water_a23exk.webp",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,w_400/v1615394795/assets/artworks/cloud_water_sv5lme.png",
+    tag: ["P5.js", "Digital"],
+    date: "2021",
+    description_tw:
+      "運用webGL的shader，再配合Fractal Brownian Motion的概念，做出具雲霧特性的清澈溪流效果。因為shade是直接運用CPU計算繪圖，和particle系統比較起來速度相對順暢許多。",
+    description_en:
+      "Using the webGL shader, combined with the concept of Fractal Brownian Motion, a clear stream effect with cloud and fog characteristics is created. Because the shade directly uses the CPU to calculate and draw, it is much smoother than the particle system.",
+    url: "https://openprocessing.org/sketch/1129360",
+  },
+  {
     id: 25,
     name_tw: "躁",
     name_en: "Agonize",
