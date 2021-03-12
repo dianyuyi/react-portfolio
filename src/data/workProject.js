@@ -1,5 +1,20 @@
 const data = [
   {
+    id: 27,
+    name_tw: "台灣觀光景點查詢",
+    name_en: "Taiwan ScenicSpot Query",
+    image: "https://miro.medium.com/max/1000/1*Mwkx6PEKmzcvW2q8VXI0Pg.png",
+    image_webp: "",
+    thumb: "https://miro.medium.com/max/1000/1*Mwkx6PEKmzcvW2q8VXI0Pg.png",
+    tag: ["React", "API"],
+    date: "2021",
+    description_tw:
+      "利用交通部PTX平台提供的API(MOTC Transport API V2 / Tourism)，嘗試做出的台灣各縣市景點查詢網站，運用的技術包含Inifinte Scroll、react-virtualized。每次下拉時最多讀取30筆新資料，點擊列表上的個別景點會顯示包含詳細圖文與旅遊資訊的小視窗。",
+    description_en:
+      "Using the API (MOTC Transport API V2 / Tourism) provided by the PTX platform of the Ministry of Transportation, we tried to make a website for searching scenic spots in various counties and cities in Taiwan. The technologies used include Inifinte Scroll and react-virtualized. Each time you pull down, you can read up to 30 new data. Clicking on an individual attraction on the list will display a modal containing detailed graphics and travel information.",
+    url: "https://github.com/dianyuyi/react-tourism",
+  },
+  {
     id: 26,
     name_tw: "雲水",
     name_en: "Cloud water",
