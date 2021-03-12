@@ -50,6 +50,7 @@ const SingleWork = () => {
           description_en,
           url,
         } = item;
+
         // google ver
         // const tagArr = tag.split(",");
         const urlText = () => {
@@ -64,7 +65,7 @@ const SingleWork = () => {
             <IntroContainer key={id} content={"left"}>
               <Fade left>
                 <IntroImg
-                  src={isWebp ? image_webp : image}
+                  src={isWebp && image_webp ? image_webp : image}
                   alt={name_en}
                   effect="blur"
                   visibleByDefault={true}

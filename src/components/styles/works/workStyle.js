@@ -69,7 +69,7 @@ export const WorkImg = styled.div`
   img {
     width: 100%;
     min-height: 200px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
     top: 0;
     transition: 0.6s cubic-bezier(0.075, 0.02, 0.165, 1);

@@ -54,9 +54,11 @@ const AppProvider = ({ children }) => {
   // };
   const filterByTag = (tag) => {
     if (tag === "All") {
-      setWorkProjects(localData);
+      // setWorkProjects(localData);
+      setfilterProjects(localData);
       // setWorkProjects(googleData);
       setActiveTag("All");
+      // console.log(localData);
       return;
     }
 
