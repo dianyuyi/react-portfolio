@@ -9,3 +9,4 @@ export { default as TagMenu } from "./TagMenu";
 export { default as Title } from "./Title";
 export { default as WorksList } from "./WorksList";
 export { default as SubmitForm } from "./Form/SubmitForm";
+export { default as WaterDraw } from "./P5/WaterDraw";
