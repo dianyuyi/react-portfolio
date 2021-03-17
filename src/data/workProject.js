@@ -1,5 +1,24 @@
 const data = [
   {
+    id: 28,
+    name_tw: "虛空",
+    name_en: "Void",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1615954142/assets/artworks/void_resize_lvhta5.jpg",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1615955556/assets/artworks/webp_file/void_resize_o0pclm.webp",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,w_800/v1615954142/assets/artworks/void_resize_lvhta5.jpg",
+    tag: ["Digital", "Graphic"],
+    date: "2021",
+    description_tw:
+      "以行草的書法字體「虛空」二字作為基底，疊加其他線條與色彩完成的抽象水墨。意圖用交錯的構圖來表現沒有盡頭的雜亂思緒與迷惘的循環。",
+    description_en:
+      "The cursive calligraphy font 'Void' is used as the base, and other lines and colors are superimposed to complete the abstract waterink. The intention is to use a staggered composition to express the endless cycle of messy thoughts and confusion.",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1615954142/assets/artworks/void_resize_lvhta5.jpg",
+  },
+  {
     id: 27,
     name_tw: "台灣觀光景點查詢",
     name_en: "Taiwan ScenicSpot Query",
