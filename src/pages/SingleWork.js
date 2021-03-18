@@ -29,7 +29,6 @@ const SingleWork = () => {
   const workBySession = window.sessionStorage.getItem("sessionWork");
   const sessionId = window.sessionStorage.getItem("workpageId");
 
-  console.log(workBySession);
   const fetchData = useCallback(() => {
     if (workBySession && id == sessionId) {
       setDisplayWork(JSON.parse(workBySession));
