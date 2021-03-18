@@ -1,7 +1,14 @@
 import styled from "styled-components";
 import variables from "./common/variables";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+export const MotionContainer = styled(motion.div)`
+  min-height: 95vh;
+  @media only screen and (max-width: ${variables.breakpointPad}) {
+    min-height: 180vh;
+  }
+`;
 export const AboutContainer = styled.div`
   width: ${({ grid }) => (grid ? `${grid}%` : `100%`)};
   height: 100%;
@@ -84,6 +91,10 @@ export const ResumeBar = styled.div`
   display: flex;
   justify-content: flex-end;
   margin: 0 10% 5% 0;
+  @media only screen and (max-width: ${variables.breakpointPhone}) {
+    margin: 0 auto 5% auto;
+    justify-content: center;
+  }
 `;
 
 export const ResumeBtn = styled(Link)`
@@ -93,6 +104,7 @@ export const ResumeBtn = styled(Link)`
   font-size: 1.15rem;
   font-weight: 300;
   padding: 1rem 1.5rem;
+  margin: 0.5rem;
   box-shadow: inset -2px -2px 0 rgba(0, 0, 0, 1);
   transition: 0.3s;
   &:hover {

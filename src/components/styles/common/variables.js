@@ -9,6 +9,7 @@ export default {
   width: "90%",
   wrapperWidth: "65rem",
   gutter: "5%",
+  breakpointPad: "720px",
   breakpointPhone: "850px",
   breakpointTablet: "1024px",
   breakpointLaptop: "1200px",
