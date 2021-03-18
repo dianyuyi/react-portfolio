@@ -26,17 +26,18 @@ const SingleWork = () => {
   const { workProjects, lng, isWebp } = useGlobalContext();
   const [displayWork, setDisplayWork] = useState([]);
   const { id } = useParams();
-  window.sessionStorage.setItem("workpageId", id);
+  const workBySession = window.sessionStorage.getItem("sessionWork");
+  const sessionId = window.sessionStorage.getItem("workpageId");
 
+  console.log(workBySession);
   const fetchData = useCallback(() => {
-    const sessionId = window.sessionStorage.getItem("workpageId");
-    if (sessionId) {
-      const workById = workProjects.filter((item) => item.id == sessionId);
-      setDisplayWork(workById);
-      console.log("session");
+    if (workBySession && id == sessionId) {
+      setDisplayWork(JSON.parse(workBySession));
     } else {
       const workById = workProjects.filter((item) => item.id == id);
       setDisplayWork(workById);
+      window.sessionStorage.setItem("sessionWork", JSON.stringify(workById));
+      window.sessionStorage.setItem("workpageId", id);
     }
   }, [id, workProjects]);
 
