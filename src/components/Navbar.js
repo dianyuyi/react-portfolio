@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useGlobalContext } from "../context";
 import { useTranslation } from "react-i18next";
 import {
@@ -21,8 +21,27 @@ function Navbar() {
     i18n.changeLanguage(activeLng);
     setLng(activeLng);
   };
+
+  const [isScrollDown, setIsScrolldown] = useState(false);
+
+  let listener = null;
+  const [scrollState, setScrollState] = useState("top");
+
+  useEffect(() => {
+    listener = document.addEventListener("scroll", (e) => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 60) {
+        setIsScrolldown(true);
+      } else {
+        setIsScrolldown(false);
+      }
+    });
+    return () => {
+      document.removeEventListener("scroll", listener);
+    };
+  }, [scrollState]);
   return (
-    <Nav>
+    <Nav isScrollDown={isScrollDown}>
       <NavLink to="/">
         <LogoImg src={NavLogo} alt="loxi" />
       </NavLink>

@@ -10,6 +10,8 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem ${variables.gutter};
+  background: ${({ isScrollDown }) =>
+    isScrollDown ? `rgba(255,255,255,0.8)` : `transparent`};
   z-index: 100;
   position: fixed;
   top: 0;

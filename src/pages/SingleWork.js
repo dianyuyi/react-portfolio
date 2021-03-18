@@ -26,9 +26,18 @@ const SingleWork = () => {
   const { workProjects, lng, isWebp } = useGlobalContext();
   const [displayWork, setDisplayWork] = useState([]);
   const { id } = useParams();
+  window.sessionStorage.setItem("workpageId", id);
+
   const fetchData = useCallback(() => {
-    const workById = workProjects.filter((item) => item.id == id);
-    setDisplayWork(workById);
+    const sessionId = window.sessionStorage.getItem("workpageId");
+    if (sessionId) {
+      const workById = workProjects.filter((item) => item.id == sessionId);
+      setDisplayWork(workById);
+      console.log("session");
+    } else {
+      const workById = workProjects.filter((item) => item.id == id);
+      setDisplayWork(workById);
+    }
   }, [id, workProjects]);
 
   useEffect(() => {
