@@ -1,5 +1,24 @@
 const data = [
   {
+    id: 29,
+    name_tw: "Karma",
+    name_en: "Karma",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1617346390/assets/artworks/karma_resize2_nslxz9.jpg",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1617346715/assets/artworks/webp_file/karma_resize2_qdskzf.webp",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/ar_1:1,c_fill,g_auto,w_600/v1617346390/assets/artworks/karma_resize2_nslxz9.jpg",
+    tag: ["Digital", "Graphic"],
+    date: "2021",
+    description_tw:
+      "靈感來自祭拜求取籤詩的行為。人們時常根據籤詩的文字敘述來判斷吉凶，但那只是一種指引，是否實現終究看人自己所走的路。故而吉兇是兩面一體，存在於自身行為的因果業報中。",
+    description_en:
+      "The inspiration comes from the act of worshiping and asking for poems. People often judge good or bad according to the written narration of the poem, but that is only a guide. Whether it is realized or not depends on the path one takes. Therefore, good and bad are two sides together, which exist in the karma of one's own behavior.",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1617346390/assets/artworks/karma_resize2_nslxz9.jpg",
+  },
+  {
     id: 28,
     name_tw: "虛空",
     name_en: "Void",
