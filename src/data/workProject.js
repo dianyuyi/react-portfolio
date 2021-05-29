@@ -1,5 +1,23 @@
 const data = [
   {
+    id: 30,
+    name_tw: "深淵",
+    name_en: "Abyss",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1622268311/assets/artworks/%E6%B7%B1%E6%B7%B5_resize_fqjonw.jpg",
+    image_webp:
+      "https://res.cloudinary.com/loxi/image/upload/v1622269278/assets/artworks/webp_file/abyss_bj8ou9.webp",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/c_thumb,h_400,w_400/v1622268311/assets/artworks/%E6%B7%B1%E6%B7%B5_resize_fqjonw.jpg",
+    tag: ["Digital", "Graphic"],
+    date: "2021",
+    description_tw:
+      "心性的鏡像畫。當胸懷過多怨憎與不平，靠著持續殺戮內心的幻影保持平靜，因而顯現在外的僅餘平靜無波之流。然而僅有自身能看見的深淵，依然存佔據著心中那塊空洞。",
+    description_en:
+      "Mirror painting of mind. When there is too much resentment and injustice in the mind, rely on the illusion created by the heart to keep calm by the continuous killing. Therefore, there is only calm and no mood swings that appear on the outside. However, the abyss that I can only see myself still occupies the void in my heart.",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1622268311/assets/artworks/%E6%B7%B1%E6%B7%B5_resize_fqjonw.jpg",
+  },{
     id: 29,
     name_tw: "Karma",
     name_en: "Karma",
