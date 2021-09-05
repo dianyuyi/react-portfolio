@@ -40,7 +40,7 @@ const SubmitForm = ({ grid }) => {
     };
     emailjs
       .send(
-        "service_2z48bgx",
+        "service_yfl9gkk",
         "template_w43n7a3",
         templateParams,
         "user_TLTeWNAZwqYt38SHgbmAG"
