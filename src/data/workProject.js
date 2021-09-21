@@ -1,5 +1,23 @@
 const data = [
   {
+    id: 31,
+    name_tw: "對影",
+    name_en: "Oppsite Shadow",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1632234302/assets/artworks/%E5%B0%8D%E5%BD%B1_resize_gx0nxi.jpg",
+    image_webp:
+      "",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/c_fill,h_400,w_400/v1632234302/assets/artworks/%E5%B0%8D%E5%BD%B1_resize_gx0nxi.jpg",
+    tag: ["Digital", "Graphic"],
+    date: "2021",
+    description_tw:
+      "中秋節時，以水面倒影為靈感來源繪製。鏡中倒影雖然虛幻，但卻能展現出白天無法呈現的美。雖然倒影處在黑影之中，卻比真正的白晝更加明亮。",
+    description_en:
+      "During the Mid-Autumn Festival, draw with the reflection on the water surface as the inspiration source. Although the reflection in the mirror is illusory, it can show the beauty that cannot be presented during the day. Although the reflection is in the dark shadow, it is brighter than the real day.",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1632234302/assets/artworks/%E5%B0%8D%E5%BD%B1_resize_gx0nxi.jpg",
+  },{
     id: 30,
     name_tw: "深淵",
     name_en: "Abyss",
