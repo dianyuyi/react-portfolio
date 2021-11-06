@@ -1,8 +1,26 @@
 const data = [
   {
+    id: 32,
+    name_tw: "荒",
+    name_en: "Desolate",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1636176354/assets/artworks/%E8%8D%92_resize_gsvrph.jpg",
+    image_webp:
+      "",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/c_fill,h_400,w_400/v1636176354/assets/artworks/%E8%8D%92_resize_gsvrph.jpg",
+    tag: ["Digital", "Graphic"],
+    date: "2021",
+    description_tw:
+      "獨自在昏暗不明的道路上行走的徬徨心境。靈感來自對人生的不確定性。",
+    description_en:
+      "A wandering state of mind walking alone on a dark and unclear road. Inspired by the uncertainty of life.",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1636176354/assets/artworks/%E8%8D%92_resize_gsvrph.jpg",
+  },{
     id: 31,
     name_tw: "對影",
-    name_en: "Oppsite Shadow",
+    name_en: "Opposite Shadow",
     image:
       "https://res.cloudinary.com/loxi/image/upload/v1632234302/assets/artworks/%E5%B0%8D%E5%BD%B1_resize_gx0nxi.jpg",
     image_webp:
