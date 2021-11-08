@@ -1,5 +1,23 @@
 const data = [
   {
+    id: 33,
+    name_tw: "微晴",
+    name_en: "Slightly sunny",
+    image:
+      "https://res.cloudinary.com/loxi/image/upload/v1636380175/assets/artworks/%E5%BE%AE%E6%99%B4_resize_xudadg.jpg",
+    image_webp:
+      "",
+    thumb:
+      "https://res.cloudinary.com/loxi/image/upload/c_fill,h_400,w_400/v1636380175/assets/artworks/%E5%BE%AE%E6%99%B4_resize_xudadg.jpg",
+    tag: ["Digital", "Graphic"],
+    date: "2021",
+    description_tw:
+      "新生活中各種艱難挑戰與機遇並存。前路雖迷濛，但望見天晴。",
+    description_en:
+      "The new life is full of challenges and opportunities. Although the road ahead is misty, hope can see the sun in the future.",
+    url:
+      "https://res.cloudinary.com/loxi/image/upload/v1636380175/assets/artworks/%E5%BE%AE%E6%99%B4_resize_xudadg.jpg",
+  },{
     id: 32,
     name_tw: "荒",
     name_en: "Desolate",
