@@ -1,5 +1,22 @@
 const data = [
   {
+    id: 35,
+    name_tw: '春意',
+    name_en: 'Breath of spring',
+    image:
+      'https://res.cloudinary.com/loxi/image/upload/v1644320408/assets/artworks/%E6%98%A5%E6%84%8F_resize_pfvw8i.jpg',
+    image_webp: '',
+    thumb:
+      'https://res.cloudinary.com/loxi/image/upload/c_fill,h_400,w_400/v1644320408/assets/artworks/%E6%98%A5%E6%84%8F_resize_pfvw8i.jpg',
+    tag: ['Digital', 'Graphic'],
+    date: '2022',
+    description_tw:
+      '凜冬過後，春天將至。一年的新開始象徵許多新生。無論是氣候，植物，或是人的情緒，都將有全新的起步。',
+    description_en:
+      "After the winter, spring is coming. The new beginning of the year symbolizes many new births. Whether it is climate, plants, or people's emotions, there will be a new start.",
+    url: 'https://res.cloudinary.com/loxi/image/upload/v1644320408/assets/artworks/%E6%98%A5%E6%84%8F_resize_pfvw8i.jpg',
+  },
+  {
     id: 34,
     name_tw: '凜冬',
     name_en: 'Winter',
