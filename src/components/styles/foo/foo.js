@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   bottom: 0;
 
   h3 {
-    font-family: "creamfont-1.1 regular";
+    /* font-family: "creamfont-1.1 regular"; */
     font-size: 0.875rem;
     padding-top: 1rem;
   }

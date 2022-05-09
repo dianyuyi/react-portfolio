@@ -3,7 +3,7 @@ import "./fonts.css";
 
 export const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'creamfont-1.1 regular',serif,'Noto Serif TC';
+    font-family: 'creamfont-1.1 regular','Noto Serif TC', serif;
     /* font-family: serif,'Noto Serif TC'; */
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  /* font: inherit; */
   vertical-align: baseline;
   box-sizing: border-box;
 }

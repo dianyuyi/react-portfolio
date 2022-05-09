@@ -29,7 +29,7 @@ export const IntroImg = styled(LazyLoadImage)`
 `;
 export const IntroName = styled.h1`
   font-size: clamp(2rem, 4vw, 3rem);
-  font-family: "creamfont-1.1 regular";
+  /* font-family: "creamfont-1.1 regular"; */
 `;
 export const IntroDate = styled.p`
   font-size: 0.875rem;
@@ -42,7 +42,7 @@ export const IntroDescription = styled.p`
   padding: 1.5rem 0;
   font-weight: 300;
   line-height: 1.5rem;
-  font-family: "creamfont-1.1 regular";
+  /* font-family: "creamfont-1.1 regular"; */
 `;
 export const IntroTagBox = styled.div`
   padding: 0.75rem 0;
@@ -64,7 +64,7 @@ export const IntroLink = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-  font-family: "creamfont-1.1 regular";
+  /* font-family: "creamfont-1.1 regular"; */
   > a {
     font-size: 1.5rem;
     color: ${variables.darkGrey};
@@ -89,7 +89,7 @@ export const BackList = styled(Link)`
   color: ${variables.darkGrey};
   font-size: 1.2rem;
   font-weight: 900;
-  font-family: "creamfont-1.1 regular";
+  /* font-family: "creamfont-1.1 regular"; */
   letter-spacing: 2px;
   overflow: hidden;
 
@@ -100,7 +100,7 @@ export const BackList = styled(Link)`
   }
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;

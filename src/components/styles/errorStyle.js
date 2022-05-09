@@ -19,7 +19,7 @@ export const ErrorContainer = styled.div`
 
 export const ErrorTitle = styled.h1`
   margin: 4rem auto 2rem auto;
-  font-family: "creamfont-1.1 regular";
+  /* font-family: "creamfont-1.1 regular"; */
   font-size: clamp(2rem, 5vw, 4rem);
 `;
 
@@ -39,7 +39,7 @@ export const ErrorBackLink = styled(Link)`
   padding: 1rem;
   border-radius: 5px;
   border: solid 1px ${variables.grey};
-  font-family: "creamfont-1.1 regular";
+  /* font-family: "creamfont-1.1 regular"; */
   color: ${variables.primary};
   box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.15);
   transition: 0.3s;

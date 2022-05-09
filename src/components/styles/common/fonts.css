@@ -1,4 +1,5 @@
 @font-face {
   font-family: 'creamfont-1.1 regular';
-  src: url('../../../assets/fonts/creamfont-1.1.otf') format('otf');
+  /* src: url('../../../assets/fonts/creamfont-1.1.otf') format('otf'); */
+  src: url('https://github.com/dianyuyi/react-portfolio/raw/8e8c267dfb9e4360f3fc621f712922a69e78c797/src/assets/fonts/creamfont-1.1.otf') format('otf');
 }

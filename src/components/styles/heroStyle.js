@@ -86,7 +86,7 @@ export const HeroItems = styled.div`
   font-weight: bold;
 `;
 export const HeroH1 = styled.h1`
-  font-family: "creamfont-1.1 regular";
+  /* font-family: "creamfont-1.1 regular"; */
   font-size: clamp(3.5rem, 7.5vw, 6rem);
   padding: 1rem 0;
   margin-bottom: 0.5rem;
