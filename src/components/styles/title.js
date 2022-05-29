@@ -27,7 +27,6 @@ export const MainTitleContainer = styled.div`
 
 export const MainTitle = styled.h1`
   position: relative;
-  /* font-family: "creamfont-1.1 regular"; */
   font-style: normal;
   font-weight: 500;
   font-size: clamp(2.5rem, 6vw, 4rem);

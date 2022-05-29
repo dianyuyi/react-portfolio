@@ -89,7 +89,6 @@ export const WorkInfo = styled.div`
 `;
 
 export const WorkTitle = styled.div`
-  /* font-family: "creamfont-1.1 regular"; */
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -99,7 +98,6 @@ export const WorkTitle = styled.div`
   height: 1.65rem; */
 `;
 export const TextWrap = styled.div`
-  /* font-family: "creamfont-1.1 regular"; */
   font-size: 1.05rem;
   padding: 0.2rem 0;
   position: relative;
@@ -125,7 +123,6 @@ export const TextWrap = styled.div`
 export const MoreBtn = styled(Link)`
   position: absolute;
   right: 1rem;
-  /* font-family: "creamfont-1.1 regular"; */
   font-size: 1.05rem;
   font-weight: 300;
   letter-spacing: 0.2rem;

@@ -46,7 +46,6 @@ export const FormWrapper = styled.div`
 export const FormLineBox = styled.div`
   padding: 0.5rem;
   color: ${variables.inverse};
-  /* font-family: "creamfont-1.1 regular"; */
   display: flex;
   flex-wrap: wrap;
   width: 100%;

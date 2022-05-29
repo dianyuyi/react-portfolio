@@ -73,7 +73,6 @@ export const IntroInner = styled.div`
   border: 1px solid ${variables.darkGrey};
   transition: 0.3s;
   p {
-    /* font-family: "creamfont-1.1 regular"; */
     font-size: 1.15rem;
     font-weight: 300;
     line-height: 1.75rem;
@@ -100,7 +99,6 @@ export const ResumeBar = styled.div`
 export const ResumeBtn = styled(Link)`
   border: 1px solid ${variables.darkGrey};
   color: ${variables.primary};
-  /* font-family: "creamfont-1.1 regular"; */
   font-size: 1.15rem;
   font-weight: 300;
   padding: 1rem 1.5rem;

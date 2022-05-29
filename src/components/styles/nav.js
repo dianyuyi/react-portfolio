@@ -45,7 +45,6 @@ export const NavLink = styled(Link)`
   color: ${variables.primary};
   text-decoration: none;
   padding: 0 0.5rem;
-  /* font-family: "creamfont-1.1 regular"; */
   font-size: 1.25rem;
   font-weight: 300;
   cursor: pointer;
